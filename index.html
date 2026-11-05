@@ -41,7 +41,7 @@
             <p class="text-cyan-400 font-medium text-sm md:text-base mb-3">
                 Senior Research Engineer &bull; Embedded Systems &bull; Hardware R&D
             </p>
-            <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed">
+            <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed text-justify">
                 Specialized in embedded systems, PCB schematic design, AVR and ESP32 microcontrollers, industrial automation prototyping, and precision laboratory equipment calibration.
             </p>
 
@@ -64,7 +64,8 @@
     <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-lg md:text-xl font-bold mb-4 text-cyan-400 uppercase tracking-wider">About Me</h2>
-            <p class="text-slate-300 leading-relaxed max-w-3xl text-xs md:text-sm mb-6">
+            <!-- Justified Paragraph -->
+            <p class="text-slate-300 leading-relaxed max-w-3xl text-xs md:text-sm mb-6 text-justify">
                 With extensive professional experience spanning over 13 years in hardware research and product development at TechShopBD, I focus on turning complex technical concepts into commercialized, production-ready embedded solutions. Having designed over 150 printed circuit boards, my expertise ranges from microcontroller training to large-scale industrial prototyping.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
@@ -89,13 +90,13 @@
                 <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2013 – Present (13+ Years)</span>
                 <h3 class="text-base font-bold mt-1 text-white">Senior Research Engineer</h3>
                 <p class="text-slate-400 text-xs font-medium mb-1">TechShopBD (Product Development & Research)</p>
-                <p class="text-slate-300 text-xs">Leading hardware R&D, designing 150+ production-grade PCBs, development boards, Arduino shields, and directing embedded system projects.</p>
+                <p class="text-slate-300 text-xs text-justify">Leading hardware R&D, designing 150+ production-grade PCBs, development boards, Arduino shields, and directing embedded system projects.</p>
             </div>
             <div>
                 <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2007 – 2012 (5 Years)</span>
                 <h3 class="text-base font-bold mt-1 text-white">Technical Expert</h3>
                 <p class="text-slate-400 text-xs font-medium mb-1">Bangladesh University of Engineering and Technology (IICT-Industry Research Initiative)</p>
-                <p class="text-slate-300 text-xs">Contributed to major national embedded system initiatives including Electronic Voting Machines, Prepaid Electricity/Gas Meters, Remote Metering Systems, and Solar-Based Irrigation Systems.</p>
+                <p class="text-slate-300 text-xs text-justify">Contributed to major national embedded system initiatives including Electronic Voting Machines, Prepaid Electricity/Gas Meters, Remote Metering Systems, and Solar-Based Irrigation Systems.</p>
             </div>
         </div>
     </section>
@@ -130,51 +131,72 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
                 <h3 class="font-bold text-sm mb-1 text-white">Electronic Voting Machine (EVM)</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">Contributed as a core technical expert during national and municipal EVM deployment initiatives under BUET IICT.</p>
+                <p class="text-slate-400 text-xs leading-relaxed text-justify">Contributed as a core technical expert during national and municipal EVM deployment initiatives under BUET IICT.</p>
             </div>
             <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
                 <h3 class="font-bold text-sm mb-1 text-white">Prepaid Electricity & Gas Meters</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">Developed embedded hardware modules and metering solutions for automated utility tracking.</p>
+                <p class="text-slate-400 text-xs leading-relaxed text-justify">Developed embedded hardware modules and metering solutions for automated utility tracking.</p>
             </div>
             <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
                 <h3 class="font-bold text-sm mb-1 text-white">150+ Commercial PCB Designs</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">Designed and production-readied over 150 unique printed circuit boards, development modules, and Arduino shields.</p>
+                <p class="text-slate-400 text-xs leading-relaxed text-justify">Designed and production-readied over 150 unique printed circuit boards, development modules, and Arduino shields.</p>
             </div>
             <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
                 <h3 class="font-bold text-sm mb-1 text-white">Solar-Based Irrigation Systems</h3>
-                <p class="text-slate-400 text-xs leading-relaxed">Engineered robust automation and control circuits for remote agricultural solar irrigation units.</p>
+                <p class="text-slate-400 text-xs leading-relaxed text-justify">Engineered robust automation and control circuits for remote agricultural solar irrigation units.</p>
             </div>
         </div>
     </section>
 
-    <!-- NEWLY ADDED: Compact Portfolio Gallery Section -->
+    <!-- Portfolio Gallery Section -->
     <section id="portfolio-gallery" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
         <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
         
-        <!-- Project Card 1: L293D Motor Controller -->
-        <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
-            <!-- Image Container -->
-            <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 overflow-hidden p-2">
-                <img src="L293D_Board.png" alt="L293D Dual DC Motor Controller Red" class="max-w-full max-h-full object-contain rounded-lg">
+        <div class="space-y-6">
+            <!-- Project Card 1: L293D Motor Controller -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
+                <!-- Image Container -->
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 overflow-hidden p-2">
+                    <img src="L293D-01.png" alt="L293D Dual DC Motor Controller Red" class="max-w-full max-h-full object-contain rounded-lg">
+                </div>
+                
+                <!-- Details Container -->
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-white mb-2">L293D Dual DC Motor Controller (Red)</h3>
+                    <!-- Justified Paragraph -->
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 text-justify">
+                        A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
+                    </p>
+                    <!-- Tags / Skills -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
+                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Details Container -->
-            <div class="flex-grow">
-                <h3 class="text-2xl font-bold text-white mb-2">L293D Dual DC Motor Controller (Red)</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                    A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
-                </p>
-                <!-- Tags / Skills -->
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
 
+            <!-- Project Card 2: 7 Segment Multiplexed Module (Newly Added) -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
+                <!-- Image Container -->
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 overflow-hidden p-2">
+                    <img src="SevSeg.jpg" alt="7 Segment Multiplexed Module" class="max-w-full max-h-full object-contain rounded-lg">
+                </div>
+                
+                <!-- Details Container -->
+                <div class="flex-grow">
+                    <h3 class="text-2xl font-bold text-white mb-2">7 Segment Multiplexed Module</h3>
+                    <!-- Justified Paragraph -->
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 text-justify">
+                        Students often face difficulties in figuring out the pins of seven segment displays. This module features a 4 digit, Red, Common Cathode 7 segment display with all necessary pinouts. All pins that are needed to glow a particular segment and digit are clearly marked which saves your time and labour.
+                    </p>
+                    <!-- Tags / Skills -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Display Module</span>
+                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Hardware R&D</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Add more project cards here following the same structure -->
-        
     </section>
 
     <!-- Contact Section -->
