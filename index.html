@@ -164,38 +164,31 @@
         </div>
     </section>
 
-    <!-- Portfolio Gallery Section (Updated with Status, Components & Action Buttons) -->
+    <!-- Portfolio Gallery Section -->
     <section id="portfolio-gallery" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
         <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
         
         <div class="space-y-6">
             <!-- Project Card 1: L293D Motor Controller -->
             <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
-                <!-- Image Container with Box Fill Style -->
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="L293D-01.png" alt="L293D Dual DC Motor Controller" class="w-full h-full object-cover rounded-xl">
+                    <img src="L293D-01.png" alt="L293D Dual DC Motor Controller Red" class="w-full h-full object-cover rounded-xl">
                 </div>
                 
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
-                        <!-- Title & Status Badge -->
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">L293D Dual DC Motor Controller</h3>
+                            <h3 class="text-xl font-bold text-white">L293D Dual DC Motor Controller (Red)</h3>
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
                         </div>
-
-                        <!-- Description -->
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
                             A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
                         </p>
-
-                        <!-- Key Components / Specs -->
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> L293D IC, 5V Logic Regulator, Terminal Blocks, Enable Switches
                         </p>
                     </div>
 
-                    <!-- Tags & Action Links/Buttons -->
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
@@ -215,35 +208,65 @@
 
             <!-- Project Card 2: 7 Segment Multiplexed Module -->
             <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
-                <!-- Image Container with Box Fill Style -->
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="SevSeg.png" alt="7 Segment Multiplexed Module" class="w-full h-full object-cover rounded-xl">
                 </div>
                 
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
-                        <!-- Title & Status Badge -->
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                             <h3 class="text-xl font-bold text-white">7 Segment Multiplexed Module</h3>
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
                         </div>
-
-                        <!-- Description -->
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
                             Students often face difficulties in figuring out the pins of seven segment displays. This module features a 4 digit, Red, Common Cathode 7 segment display with all necessary pinouts. All pins that are needed to glow a particular segment and digit are clearly marked which saves your time and labour.
                         </p>
-
-                        <!-- Key Components / Specs -->
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 4-Digit Common Cathode 7-Segment Display, Marked Pinouts
                         </p>
                     </div>
 
-                    <!-- Tags & Action Links/Buttons -->
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Display Module</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Hardware R&D</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-solid fa-file-pdf"></i> View Schematic
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3: 1 Channel 5V Relay Module (Newly Added) -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="5V1_Relay.jpg" alt="1 Channel 5V Relay Module" class="w-full h-full object-cover rounded-xl">
+                </div>
+                
+                <div class="flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">1 Channel 5V Relay Module</h3>
+                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
+                        </div>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
+                            Here comes an on board 5V relay with necessary pinouts to free you from the hassle of figuring out the relay pins. Just get this board and interface it with your Arduino or microcontroller to experiment with AC loads.
+                        </p>
+                        <p class="text-slate-300 text-xs mb-4">
+                            <strong class="text-cyan-400">Key Components:</strong> On-board 5V Relay, Screw Terminals, Optocoupler/Driver Circuit
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay Module</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Automation</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
