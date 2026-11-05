@@ -6,32 +6,19 @@
     <title>Nur Mohammad - Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom styles for active states and justify text -->
+    <!-- Custom style for justified text -->
     <style>
-        /* Border and background for active image tab */
-        .tab-thumbnail.active-tab {
-            border-color: #22d3ee !important; /* cyan-400 */
-            box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
-        }
-        /* Text color for active text tab */
-        .text-tab-btn.active-text-tab {
-            color: #22d3ee !important; /* cyan-400 */
-            font-weight: 600;
-        }
-        /* Utility class for justified text paragraphs */
         .text-justify {
             text-align: justify;
             text-justify: inter-word;
         }
     </style>
 </head>
-<body class="bg-[#0b1120] text-slate-100 font-sans antialiased">
+<body class="bg-[#0b1120] text-slate-100 font-sans antialiased min-h-screen">
 
-    <!-- Header / Navbar -->
+    <!-- Header / Navbar (Kept as requested) -->
     <header class="sticky top-0 z-50 bg-[#0b1120]/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="max-w-[96rem] mx-auto px-6 h-16 flex items-center justify-between">
             <span class="text-lg font-bold tracking-wider text-cyan-400">Nur Mohammad</span>
             <nav class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-400">
                 <a href="#about" class="hover:text-cyan-400 transition">About</a>
@@ -43,40 +30,11 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-shrink-0">
-            <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-2xl shadow-cyan-500/20">
-                <img src="NurPhoto.jpg" alt="Nur Mohammad" class="w-full h-full object-cover rounded-full bg-slate-900">
-            </div>
-        </div>
-        <div class="text-center md:text-left">
-            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 text-white">
-                Hi, I'm Nur Mohammad <span class="inline-block animate-bounce">👋</span>
-            </h1>
-            <p class="text-cyan-400 font-medium text-sm md:text-base mb-3">
-                Senior Research Engineer &bull; Embedded Systems &bull; Hardware R&D
-            </p>
-            <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed">
-                Specialized in embedded systems, PCB schematic design, AVR and ESP32 microcontrollers, industrial automation prototyping, and precision laboratory equipment calibration.
-            </p>
-            <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                <a href="mailto:contact@example.com" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
-                    <i class="fa-solid fa-envelope"></i> Email Me
-                </a>
-                <a href="#experience" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-briefcase"></i> Experience
-                </a>
-                <a href="#projects" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-microchip"></i> Projects
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section (Removed for full screen focus) -->
 
-    <!-- About Section (Graduation included) -->
-    <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- About Section (Kept as requested) -->
+    <section id="about" class="bg-slate-900/50 py-16 border-b border-slate-800/60">
+        <div class="max-w-[96rem] mx-auto px-6">
             <h2 class="text-lg md:text-xl font-bold mb-4 text-cyan-400 uppercase tracking-wider">About Me</h2>
             <p class="text-slate-300 leading-relaxed max-w-4xl text-xs md:text-sm mb-8 text-justify">
                 With extensive professional experience spanning over 13 years in hardware research and product development at TechShopBD, I focus on turning complex technical concepts into commercialized, production-ready embedded solutions. Having designed over 150 printed circuit boards, my expertise ranges from microcontroller training to large-scale industrial prototyping.
@@ -97,8 +55,43 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="max-w-7xl mx-auto px-6 py-16">
+    <!-- NEW Full Width Project Section (No Visualizer, No Tabs, Just Image & Text) -->
+    <section class="w-full bg-[#0b1120] py-12 md:py-16">
+        <div class="w-full px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            
+            <!-- Left Side: Single Image (Full Width of grid column) -->
+            <div class="w-full h-auto bg-slate-950 rounded-2xl border border-slate-800 p-4 flex items-center justify-center shadow-2xl shadow-slate-950/50 aspect-[4/3]">
+                <img id="project-image" 
+                     src="L293D_Board.png" 
+                     alt="L293D Dual DC Motor Controller Board" 
+                     class="max-w-full max-h-full object-contain rounded-xl">
+            </div>
+
+            <!-- Right Side: Name and Description -->
+            <div class="flex-grow space-y-5 px-2">
+                <h3 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">L293D Dual DC Motor Controller (Red)</h3>
+                
+                <div class="prose prose-invert prose-sm max-w-none text-slate-300 leading-relaxed text-justify space-y-4">
+                    <p>
+                        A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
+                    </p>
+                    <p>
+                        This module is engineered for robust performance in educational and hobbyist robotics. Its compact design includes protection circuitry and convenient headers for connecting to microcontrollers like Arduino or ESP32. The integrated 5V bus simplifies power distribution to external sensors and logic components.
+                    </p>
+                </div>
+
+                <!-- Tags / Skills (Kept to match style) -->
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/70">
+                    <span class="px-4 py-1.5 bg-cyan-950 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-800">PCB Design</span>
+                    <span class="px-4 py-1.5 bg-cyan-950 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-800">Embedded Systems</span>
+                    <span class="px-4 py-1.5 bg-cyan-950 text-cyan-300 text-xs font-semibold rounded-full border border-cyan-800">Motor Control</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Kept as requested) -->
+    <section id="experience" class="max-w-[96rem] mx-auto px-6 py-16 border-t border-slate-800/60">
         <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Professional Experience</h2>
         <div class="space-y-6 border-l-2 border-slate-800 pl-6 ml-2">
             <div>
@@ -107,135 +100,17 @@
                 <p class="text-slate-400 text-xs font-medium mb-1">TechShopBD (Product Development & Research)</p>
                 <p class="text-slate-300 text-xs text-justify">Leading hardware R&D, designing 150+ production-grade PCBs, development boards, Arduino shields, and directing embedded system projects.</p>
             </div>
-            <div>
-                <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2007 – 2012 (5 Years)</span>
-                <h3 class="text-base font-bold mt-1 text-white">Technical Expert</h3>
-                <p class="text-slate-400 text-xs font-medium mb-1">Bangladesh University of Engineering and Technology (IICT-Industry Research Initiative)</p>
-                <p class="text-slate-300 text-xs text-justify">Contributed to major national embedded system initiatives including Electronic Voting Machines, Prepaid Electricity/Gas Meters, Remote Metering Systems, and Solar-Based Irrigation Systems.</p>
-            </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Core Expertise & Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-microchip text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Embedded Systems & R&D</h3>
-                    <p class="text-slate-400 text-xs">AVR, ESP32, NodeMCU, PIC, 8051, Raspberry Pi 5, and Xilinx Artix-7 FPGA boards.</p>
-                </div>
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-bolt text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Hardware & PCB Design</h3>
-                    <p class="text-slate-400 text-xs">Schematic capture and PCB layout design using EasyEDA with 150+ commercial designs.</p>
-                </div>
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-gears text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Prototyping & Calibration</h3>
-                    <p class="text-slate-400 text-xs">Industrial automation prototyping and precision laboratory equipment inspection & calibration.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Gallery Section (Corrected Tabs and Justify Text) -->
-    <section id="interactive-gallery" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-800/60 bg-slate-950 rounded-3xl my-16">
-        <h2 class="text-lg md:text-xl font-bold mb-10 text-cyan-400 uppercase tracking-wider">Project Visualizer (L293D Red)</h2>
-        <div class="flex flex-col md:flex-row items-start gap-12">
-            <!-- Left Side: The Big Image Display -->
-            <div class="w-full md:w-3/5 aspect-[4/3] bg-[#0b1120] rounded-2xl border border-slate-800 p-3 flex items-center justify-center shadow-xl shadow-slate-950/30">
-                <!-- Main Image Element -->
-                <img id="current-display-image" 
-                     src="image_0.png" 
-                     alt="Project View" 
-                     class="max-w-full max-h-full object-contain rounded-xl transition-all duration-500 ease-in-out shadow-inner">
-            </div>
-
-            <!-- Right Side: The Tabs and Thumbnails -->
-            <div class="w-full md:w-2/5 space-y-8">
-                <!-- Small Thumbnail Previews (Clickable) -->
-                <div class="grid grid-cols-4 gap-4">
-                    <button onclick="updateImage('image_0.png', this)" class="tab-thumbnail active-tab aspect-square bg-slate-900 rounded-xl border-2 border-slate-700 hover:border-cyan-500 p-1.5 transition-all">
-                        <img src="image_0.png" alt="Design View" class="w-full h-full object-contain rounded-lg">
-                    </button>
-                    <button onclick="updateImage('image_pcb.png', this)" class="tab-thumbnail aspect-square bg-slate-900 rounded-xl border-2 border-slate-700 hover:border-cyan-500 p-1.5 transition-all">
-                        <img src="image_pcb.png" alt="PCB View" class="w-full h-full object-contain rounded-lg">
-                    </button>
-                    <button onclick="updateImage('image_schematic.png', this)" class="tab-thumbnail aspect-square bg-slate-900 rounded-xl border-2 border-slate-700 hover:border-cyan-500 p-1.5 transition-all">
-                        <img src="image_schematic.png" alt="Schematic View" class="w-full h-full object-contain rounded-lg">
-                    </button>
-                    <button onclick="updateImage('image_3d.png', this)" class="tab-thumbnail aspect-square bg-slate-900 rounded-xl border-2 border-slate-700 hover:border-cyan-500 p-1.5 transition-all">
-                        <img src="image_3d.png" alt="3D Model View" class="w-full h-full object-contain rounded-lg">
-                    </button>
-                </div>
-
-                <!-- The Text Tabs (Corrected names) -->
-                <div class="grid grid-cols-4 gap-3 bg-slate-900 p-2 rounded-full border border-slate-800">
-                    <button onclick="updateImage('image_0.png', document.querySelectorAll('.tab-thumbnail')[0])" class="text-tab-btn active-text-tab px-4 py-2.5 text-xs font-semibold rounded-full text-cyan-300 bg-cyan-950/50 transition-all hover:text-cyan-100">Design</button>
-                    <button onclick="updateImage('image_pcb.png', document.querySelectorAll('.tab-thumbnail')[1])" class="text-tab-btn px-4 py-2.5 text-xs font-semibold rounded-full text-slate-400 hover:text-cyan-100 hover:bg-cyan-950/30 transition-all">PCB</button>
-                    <button onclick="updateImage('image_schematic.png', document.querySelectorAll('.tab-thumbnail')[2])" class="text-tab-btn px-4 py-2.5 text-xs font-semibold rounded-full text-slate-400 hover:text-cyan-100 hover:bg-cyan-950/30 transition-all">Schematic</button>
-                    <button onclick="updateImage('image_3d.png', document.querySelectorAll('.tab-thumbnail')[3])" class="text-tab-btn px-4 py-2.5 text-xs font-semibold rounded-full text-slate-400 hover:text-cyan-100 hover:bg-cyan-950/30 transition-all">3D Model</button>
-                </div>
-
-                <!-- Project Details Section (Text justified) -->
-                <div class="flex-grow space-y-4 px-2">
-                    <h3 class="text-2xl font-extrabold text-white">L293D Dual DC Motor Controller (Red)</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed text-justify">
-                        A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
-                    </p>
-                    <!-- Additional Tags -->
-                    <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/70">
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Schematic</span>
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">3D Model</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- JavaScript for Gallery Functionality -->
-    <script>
-        function updateImage(newSrc, clickedButton) {
-            const displayImage = document.getElementById('current-display-image');
-            const thumbnails = document.querySelectorAll('.tab-thumbnail');
-            const textTabs = document.querySelectorAll('.text-tab-btn');
-
-            // Change main image source
-            displayImage.src = newSrc;
-
-            // Update Active State for Thumbnails
-            thumbnails.forEach(thumb => thumb.classList.remove('active-tab', 'border-cyan-500'));
-            clickedButton.classList.add('active-tab', 'border-cyan-500');
-
-            // Find the index of the clicked thumbnail
-            let index = 0;
-            thumbnails.forEach((thumb, i) => {
-                if (thumb === clickedButton) index = i;
-            });
-
-            // Update Active State for Text Tabs
-            textTabs.forEach(tab => {
-                tab.classList.remove('active-text-tab', 'text-cyan-300', 'bg-cyan-950/50');
-                tab.classList.add('text-slate-400');
-            });
-            
-            textTabs[index].classList.add('active-text-tab', 'text-cyan-300', 'bg-cyan-950/50');
-            textTabs[index].classList.remove('text-slate-400');
-        }
-    </script>
-
-    <!-- Contact Section -->
+    <!-- Contact Section (Kept as requested) -->
     <section id="contact" class="bg-slate-900/50 py-16 border-t border-slate-800/60 text-center">
         <h2 class="text-lg md:text-xl font-bold mb-3 text-cyan-400 uppercase tracking-wider">Let's Connect</h2>
         <p class="text-slate-400 mb-6 max-w-md mx-auto text-xs">Interested in discussing hardware design, embedded systems, or collaboration? Feel free to reach out.</p>
         <a href="mailto:contact@example.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg transition shadow-lg shadow-cyan-500/20 text-xs">Send An Email</a>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (Kept as requested) -->
     <footer class="bg-[#070b14] border-t border-slate-900 py-6 text-center text-slate-500 text-xs">
         <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
     </footer>
