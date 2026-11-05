@@ -22,14 +22,14 @@
             <div class="flex-shrink-0 w-full md:w-1/2 space-y-5">
                 <!-- Main Image Display (Big Image) -->
                 <div class="w-full h-96 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 overflow-hidden p-2 shadow-inner shadow-slate-950">
-                    <img id="mainImage" src="image_0.jpg" alt="L293D Main View" class="max-w-full max-h-full object-contain rounded-lg transition-opacity duration-500">
+                    <img id="mainImage" src="image_0.png" alt="L293D Main View" class="max-w-full max-h-full object-contain rounded-lg transition-opacity duration-500">
                 </div>
 
                 <!-- Image Tabs / Thumbnails -->
                 <div class="grid grid-cols-4 gap-4">
                     <!-- Tab 1: Main Image -->
-                    <button onclick="changeImage('image_0.jpg', this)" class="tab-btn active group aspect-square bg-slate-950 rounded-lg flex items-center justify-center border-2 border-slate-800 hover:border-cyan-700 transition-all p-1">
-                        <img src="image_0.jpg" alt="Main View Thumbnail" class="max-w-full max-h-full object-contain rounded group-hover:opacity-90">
+                    <button onclick="changeImage('image_0.png', this)" class="tab-btn active group aspect-square bg-slate-950 rounded-lg flex items-center justify-center border-2 border-slate-800 hover:border-cyan-700 transition-all p-1">
+                        <img src="image_0.png" alt="Main View Thumbnail" class="max-w-full max-h-full object-contain rounded group-hover:opacity-90">
                     </button>
                     <!-- Tab 2: PCB Design -->
                     <button onclick="changeImage('pcb_image.png', this)" class="tab-btn group aspect-square bg-slate-950 rounded-lg flex items-center justify-center border-2 border-slate-800 hover:border-cyan-700 transition-all p-1">
@@ -47,7 +47,7 @@
                 
                 <!-- Tab Names Below Thumbnails (Clickable text) -->
                 <div class="grid grid-cols-4 gap-4 text-center text-xs text-slate-400 font-medium">
-                    <button onclick="changeImage('image_0.jpg', document.querySelectorAll('.tab-btn')[0])" class="hover:text-cyan-400 focus:text-cyan-400 active-text">Main Image</button>
+                    <button onclick="changeImage('image_0.png', document.querySelectorAll('.tab-btn')[0])" class="hover:text-cyan-400 focus:text-cyan-400 active-text">Main Image</button>
                     <button onclick="changeImage('pcb_image.png', document.querySelectorAll('.tab-btn')[1])" class="hover:text-cyan-400 focus:text-cyan-400">PCB Design</button>
                     <button onclick="changeImage('schematic.png', document.querySelectorAll('.tab-btn')[2])" class="hover:text-cyan-400 focus:text-cyan-400">Schematic</button>
                     <button onclick="changeImage('vector.png', document.querySelectorAll('.tab-btn')[3])" class="hover:text-cyan-400 focus:text-cyan-400">Vector Image</button>
