@@ -1,128 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Item - L293D Motor Controller</title>
-    <style>
-        /* সাধারণ স্টাইল (আপনার সাইটের সাথে মানানসই করে নিন) */
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; margin: 20px; }
-        
-        /* প্রজেক্ট কার্ডের স্টাইল */
-        .project-card {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            max-width: 800px; /* সাইজ ছোট রাখা হলো */
-            display: flex; /* ছবি এবং লেখা পাশাপাশি দেখানোর জন্য (ফ্লেক্সবক্স) */
-            gap: 20px;
-        }
-
-        /* ছবির কন্টেনার */
-        .project-image-container {
-            flex: 0 0 150px; /* ছবির সাইজ ছোট এবং স্থির */
-        }
-        .project-image-container img {
-            max-width: 100%;
-            border-radius: 5px;
-            border: 1px solid #eee;
-        }
-
-        /* টেক্সট কন্টেনার */
-        .project-details {
-            flex: 1; /* বাকি জায়গা জুড়ে লেখা থাকবে */
-        }
-
-        .project-title {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-            color: #2c3e50;
-        }
-        
-        .project-summary {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        .project-tags {
-            margin-top: 10px;
-        }
-        .tag {
-            display: inline-block;
-            background-color: #e2e6ea;
-            color: #495057;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-        }
-        
-        /* রেসপন্সিভ ডিজাইন (মোবাইলের জন্য) */
-        @media (max-width: 600px) {
-            .project-card {
-                flex-direction: column; /* ছোট স্ক্রিনে ছবি ও লেখা উপর-নিচ হবে */
-            }
-            .project-image-container {
-                flex: 0 0 auto;
-                text-align: center;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nur Mohammad - Portfolio</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-[#0b1120] text-slate-100 font-sans antialiased">
 
-    <!-- আপনি যখন ১০০-১৫০টি প্রজেক্ট যুক্ত করবেন, তখন এই কার্ডটি বারবার কপি করবেন -->
-    <div class="project-card">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0b1120]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-lg font-bold tracking-wider text-cyan-400">Nur Mohammad</span>
+            <nav class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Reference Style) -->
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <!-- Circular Profile Picture -->
+        <div class="flex-shrink-0">
+            <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-2xl shadow-cyan-500/20">
+                <img src="NurPhoto.jpg" alt="Nur Mohammad" class="w-full h-full object-cover rounded-full bg-slate-900">
+            </div>
+        </div>
+
+        <!-- Intro Text & Badges -->
+        <div class="text-center md:text-left">
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 text-white">
+                Hi, I'm Nur Mohammad <span class="inline-block animate-bounce">👋</span>
+            </h1>
+            <p class="text-cyan-400 font-medium text-sm md:text-base mb-3">
+                Senior Research Engineer &bull; Embedded Systems &bull; Hardware R&D
+            </p>
+            <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed">
+                Specialized in embedded systems, PCB schematic design, AVR and ESP32 microcontrollers, industrial automation prototyping, and precision laboratory equipment calibration.
+            </p>
+
+            <!-- Action / Contact Buttons -->
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                <a href="mailto:contact@example.com" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-envelope"></i> Email Me
+                </a>
+                <a href="#experience" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i> Experience
+                </a>
+                <a href="#projects" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-microchip"></i> Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-lg md:text-xl font-bold mb-4 text-cyan-400 uppercase tracking-wider">About Me</h2>
+            <p class="text-slate-300 leading-relaxed max-w-3xl text-xs md:text-sm mb-6">
+                With extensive professional experience spanning over 13 years in hardware research and product development at TechShopBD, I focus on turning complex technical concepts into commercialized, production-ready embedded solutions. Having designed over 150 printed circuit boards, my expertise ranges from microcontroller training to large-scale industrial prototyping.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <strong class="text-cyan-400 block mb-1">Education:</strong>
+                    <p>B.Sc. in Electrical and Electronics Engineering (Prime University)</p>
+                    <p>Diploma in Electrical Technology (MIST)</p>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
+                    <strong class="text-cyan-400 block mb-1">Specialization:</strong>
+                    <p>Embedded Systems, Hardware R&D, Microcontroller Training & Industrial Prototyping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Professional Experience</h2>
+        <div class="space-y-6 border-l-2 border-slate-800 pl-6 ml-2">
+            <div>
+                <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2013 – Present (13+ Years)</span>
+                <h3 class="text-base font-bold mt-1 text-white">Senior Research Engineer</h3>
+                <p class="text-slate-400 text-xs font-medium mb-1">TechShopBD (Product Development & Research)</p>
+                <p class="text-slate-300 text-xs">Leading hardware R&D, designing 150+ production-grade PCBs, development boards, Arduino shields, and directing embedded system projects.</p>
+            </div>
+            <div>
+                <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2007 – 2012 (5 Years)</span>
+                <h3 class="text-base font-bold mt-1 text-white">Technical Expert</h3>
+                <p class="text-slate-400 text-xs font-medium mb-1">Bangladesh University of Engineering and Technology (IICT-Industry Research Initiative)</p>
+                <p class="text-slate-300 text-xs">Contributed to major national embedded system initiatives including Electronic Voting Machines, Prepaid Electricity/Gas Meters, Remote Metering Systems, and Solar-Based Irrigation Systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Core Expertise & Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                    <i class="fa-solid fa-microchip text-cyan-400 text-lg mb-3"></i>
+                    <h3 class="font-bold text-sm mb-2 text-white">Embedded Systems & R&D</h3>
+                    <p class="text-slate-400 text-xs">AVR, ESP32, NodeMCU, PIC, 8051, Raspberry Pi 5, and Xilinx Artix-7 FPGA boards.</p>
+                </div>
+                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                    <i class="fa-solid fa-bolt text-cyan-400 text-lg mb-3"></i>
+                    <h3 class="font-bold text-sm mb-2 text-white">Hardware & PCB Design</h3>
+                    <p class="text-slate-400 text-xs">Schematic capture and PCB layout design using EasyEDA with 150+ commercial designs.</p>
+                </div>
+                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                    <i class="fa-solid fa-gears text-cyan-400 text-lg mb-3"></i>
+                    <h3 class="font-bold text-sm mb-2 text-white">Prototyping & Calibration</h3>
+                    <p class="text-slate-400 text-xs">Industrial automation prototyping and precision laboratory equipment inspection & calibration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Key National & Commercial Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                <h3 class="font-bold text-sm mb-1 text-white">Electronic Voting Machine (EVM)</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Contributed as a core technical expert during national and municipal EVM deployment initiatives under BUET IICT.</p>
+            </div>
+            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                <h3 class="font-bold text-sm mb-1 text-white">Prepaid Electricity & Gas Meters</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Developed embedded hardware modules and metering solutions for automated utility tracking.</p>
+            </div>
+            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                <h3 class="font-bold text-sm mb-1 text-white">150+ Commercial PCB Designs</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Designed and production-readied over 150 unique printed circuit boards, development modules, and Arduino shields.</p>
+            </div>
+            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
+                <h3 class="font-bold text-sm mb-1 text-white">Solar-Based Irrigation Systems</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Engineered robust automation and control circuits for remote agricultural solar irrigation units.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWLY ADDED: Compact Portfolio Gallery Section -->
+    <section id="portfolio-gallery" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
+        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
         
-        <!-- প্রজেক্টের ছোট ছবি (আগে থেকে তৈরি করা ছবিটি এখানে থাকবে) -->
-        <div class="project-image-container">
-            <img src="image_0.png" alt="L293D Dual DC Motor Controller Red Module">
-        </div>
+        <!-- Project Card 1: L293D Motor Controller -->
+        <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300">
+            <!-- Image Container -->
+            <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl flex items-center justify-center border border-slate-800 overflow-hidden p-2">
+                <img src="image_0.png" alt="L293D Dual DC Motor Controller Red" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+            
+            <!-- Details Container -->
+            <div class="flex-grow">
+                <h3 class="text-2xl font-bold text-white mb-2">L293D Dual DC Motor Controller (Red)</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
+                </p>
+                <!-- Tags / Skills -->
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
+                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
 
-        <!-- প্রজেক্টের সংক্ষিপ্ত বিবরণ -->
-        <div class="project-details">
-            <h3 class="project-title">L293D Dual DC Motor Controller (Red)</h3>
-            
-            <p class="project-summary">
-                <strong>Description:</strong> A compact and reliable dual H-bridge motor controller module using the L293D IC. Capable of driving two DC motors simultaneously with independent speed (PWM) and direction control.
-                <br>
-                <strong>Key Features:</strong> 7V-15V operation, integrated 5V logic regulator, DPDT motor enable switches, and comprehensive header pinout for easy microcontroller integration.
-            </p>
-            
-            <div class="project-tags">
-                <span class="tag">Electronics Design</span>
-                <span class="tag">PCB Layout</span>
-                <span class="tag">Motor Control</span>
-                <span class="tag">Embedded Systems</span>
-                <span class="tag">Manufacturing</span>
+                </div>
             </div>
         </div>
-    </div>
+        
+        <!-- Add more project cards here following the same structure -->
+        
+    </section>
 
-    <!-- উদাহরণ হিসেবে আরেকটি কার্ডের কাঠামো (পরে নতুন তথ্য দিয়ে পূরণ করবেন) -->
-    <!-- 
-    <div class="project-card">
-        <div class="project-image-container">
-            <img src="your_next_project_image.jpg" alt="Next Project">
-        </div>
-        <div class="project-details">
-            <h3 class="project-title">Project Title</h3>
-            <p class="project-summary">
-                <strong>Description:</strong> [Short description].
-                <br>
-                <strong>Key Features:</strong> [Key Specs].
-            </p>
-            <div class="project-tags">
-                <span class="tag">[Tag 1]</span>
-                <span class="tag">[Tag 2]</span>
-            </div>
-        </div>
-    </div> 
-    -->
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-900/50 py-16 border-t border-slate-800/60 text-center">
+        <h2 class="text-lg md:text-xl font-bold mb-3 text-cyan-400 uppercase tracking-wider">Let's Connect</h2>
+        <p class="text-slate-400 mb-6 max-w-md mx-auto text-xs">Interested in discussing hardware design, embedded systems, or collaboration? Feel free to reach out.</p>
+        <a href="mailto:contact@example.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg transition shadow-lg shadow-cyan-500/20 text-xs">Send An Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070b14] border-t border-slate-900 py-6 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
