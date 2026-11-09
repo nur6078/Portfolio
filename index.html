@@ -164,17 +164,30 @@
         </div>
     </section>
 
-    <!-- Portfolio Gallery Section -->
+    <!-- Portfolio Gallery Section with Filterable Tabs -->
     <section id="portfolio-gallery" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
-        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <h2 class="text-lg md:text-xl font-bold text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap gap-2" id="filter-buttons">
+                <button onclick="filterProjects('all')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-slate-950 shadow-md">All</button>
+                <button onclick="filterProjects('module')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Modules</button>
+                <button onclick="filterProjects('iot')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">IoT & Smart Home</button>
+                <button onclick="filterProjects('devboard')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Dev Boards</button>
+                <button onclick="filterProjects('robotics')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Robotics</button>
+                <button onclick="filterProjects('shield')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Shields</button>
+            </div>
+        </div>
         
-        <div class="space-y-6">
-            <!-- Project Card 1: L293D Motor Controller -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+        <!-- Projects Container -->
+        <div class="space-y-6" id="projects-container">
+            
+            <!-- Project Card 1: L293D Motor Controller (Module) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="L293D-01.png" alt="L293D Dual DC Motor Controller" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -188,7 +201,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> L293D IC, 5V Logic Regulator, Terminal Blocks, Enable Switches
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
@@ -206,12 +218,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 2: 7 Segment Multiplexed Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 2: 7 Segment Multiplexed Module (Module) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="SevSeg.png" alt="7 Segment Multiplexed Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -225,7 +236,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> 4-Digit Common Cathode 7-Segment Display, Marked Pinouts
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
@@ -243,12 +253,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 3: 1 Channel 5V Relay Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 3: 1 Channel 5V Relay Module (Module) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="5V1_Relay.png" alt="1 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -262,7 +271,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> On-board 5V Relay, Screw Terminals, Optocoupler/Driver Circuit
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay Module</span>
@@ -280,12 +288,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 4: ESP8266 WiFi 4 Channel IoT Smart Switch -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 4: ESP8266 WiFi 4 Channel IoT Smart Switch (IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="4CH_IOT.png" alt="ESP8266 WiFi 4 Channel IoT Smart Switch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -299,7 +306,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> ESP8266 NodeMCU, 4x Songle 10A Relays, DHT11 Sensor Support
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
@@ -317,12 +323,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 5: PIC Programmer -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 5: PIC Programmer (Dev Board / Tool) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="PIC_Pro.png" alt="PIC Programmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -336,7 +341,6 @@
                             <strong class="text-cyan-400">Key Features:</strong> ZIF Socket, 3-Channel Logic Analyzer, Built-in USB to Serial, ICSP Support
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Programmer</span>
@@ -354,12 +358,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 6: Arduino RTC Shield -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 6: Arduino RTC Shield (Shield) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="RTC_Shield.png" alt="Arduino RTC Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -373,7 +376,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> DS1307 IC, I2C Interface (SCL & SDA), Stackable Headers
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">RTC</span>
@@ -391,12 +393,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 7: AVR Trainer Kit Pro -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 7: AVR Trainer Kit Pro (Dev Board) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="AVR_TKP.png" alt="AVR Trainer Kit Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -410,7 +411,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> ATmega16/32, LCD, 7-Segment, LEDs, RGB LED, Buzzer, DS18B20, LDR, CH340.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR</span>
@@ -428,12 +428,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 8: ESP32 IOT Board -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 8: ESP32 IOT Board (Dev Board / IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="ESP32Dev.png" alt="ESP32 IOT Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -447,7 +446,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> ESP32, DHT11 Sensor, 0.96" OLED, Push Buttons, Expansion Headers.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP32</span>
@@ -465,12 +463,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 9: AVR Programmer -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 9: AVR Programmer (Dev Board) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="AVRPro.png" alt="AVR Programmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -484,7 +481,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> USB Type-B, ZIF Socket, ISP Headers.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR</span>
@@ -502,12 +498,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 10: RFID Access Control System -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 10: RFID Access Control System (IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="RFIDA.png" alt="RFID Access Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -521,7 +516,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> MFRC522 Reader, RFID Card/Tag, 12V Input, Buzzer, Status LEDs.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">RFID</span>
@@ -539,12 +533,11 @@
                 </div>
             </div>
 
-            <!-- Project Card 11: 1 Channel Light Fan Dimmer Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 11: 1 Channel Light Fan Dimmer Module (Module / IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Dimmer1.png" alt="1 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -558,7 +551,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Dimmer</span>
@@ -576,13 +568,11 @@
                 </div>
             </div>
 
-          
-              <!-- Project Card 11: 2 Channel Light Fan Dimmer Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 12: 2 Channel Light Fan Dimmer Module (Module / IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Dimmer2.png" alt="2 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -591,13 +581,11 @@
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
                             An enhanced version of the dimmer module, providing independent smart control for two separate AC loads, typically two lighting lines and one ceiling fan. Perfect for comprehensive room automation using Wi-Fi or Bluetooth-enabled microcontrollers.
-                    </p>
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Dimmer</span>
@@ -615,13 +603,11 @@
                 </div>
             </div>
 
-
-            <!-- Project Card 12: Digital IR Sensor Array 8 -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 13: Digital IR Sensor Array 8 (Robotics) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="robotics">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="8Array.png" alt="Digital IR Sensor Array 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -635,7 +621,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> 8 Channel IR Sensors, Comparator IC, Sensitivity Potentiometers, Digital Outputs.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Robotics</span>
@@ -653,14 +638,11 @@
                 </div>
             </div>
 
-
-
-            <!-- Project Card: 4 Channel 5V Relay Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 14: 4 Channel 5V Relay Module (Module) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Relay_4.png" alt="4 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -674,7 +656,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> 5V DC, 4-Channel Relays, Screw Terminal Blocks.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay</span>
@@ -691,14 +672,12 @@
                     </div>
                 </div>
             </div>
-			
-			
-			<!-- Project Card: 10 Channel 5V Relay Module -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+
+            <!-- Project Card 15: 10 Channel 5V Relay Module (Module) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Relay_10.png" alt="10 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -712,7 +691,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> 5V DC, 10-Channel Relays, Screw Terminal Blocks.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay</span>
@@ -729,15 +707,12 @@
                     </div>
                 </div>
             </div>
-			
-			
-			
-			<!-- Project Card: PIC16F877A Mini Development Board -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+
+            <!-- Project Card 16: PIC16F877A Mini Development Board (Dev Board) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="PIC_Mini.png" alt="PIC16F877A Mini Development Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -751,7 +726,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> PIC16F877A IC, ICSP Port, DC Power Jack, Crystal Oscillator.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PIC</span>
@@ -768,14 +742,12 @@
                     </div>
                 </div>
             </div>
-			
-			
-			<!-- Project Card: ESP8266 ESP-01 WiFi 2-Relay Switch -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+
+            <!-- Project Card 17: ESP8266 ESP-01 WiFi 2-Relay Switch (IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="ESPRelay.png" alt="ESP8266 ESP-01 WiFi 2-Relay Switch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -789,7 +761,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> ESP-01 Module, 2-Channel Relays, Screw Terminals.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP8266</span>
@@ -806,13 +777,12 @@
                     </div>
                 </div>
             </div>
-			
-			<!-- Project Card: Digital IR Sensor Array 6-Channel -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+
+            <!-- Project Card 18: Digital IR Sensor Array 6-Channel (Robotics) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="robotics">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Array6.png" alt="Digital IR Sensor Array 6-Channel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -826,7 +796,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> TCRT5000 Sensors, LM358 Comparators, Potentiometers.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Robotics</span>
@@ -844,12 +813,11 @@
                 </div>
             </div>
 
-			<!-- Project Card: Arduino Bootloader Shield -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 19: Arduino Bootloader Shield (Shield) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="bootloader.png" alt="Arduino Bootloader Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -863,7 +831,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> ZIF Socket, FTDI Header, Indicator LEDs.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR</span>
@@ -881,13 +848,11 @@
                 </div>
             </div>
 
-		
-			<!-- Project Card: Arduino LCD Keypad Shield -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 20: Arduino LCD Keypad Shield (Shield) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="LCD_Keypad.png" alt="Arduino LCD Keypad Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -901,7 +866,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> 16x2 LCD, 6-Key Keypad, Contrast Potentiometer.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino</span>
@@ -918,14 +882,12 @@
                     </div>
                 </div>
             </div>
-            
 
-            <!-- Project Card 13: Bluetooth Smart Switch 3CH -->
-            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
+            <!-- Project Card 21: Bluetooth Smart Switch 3CH (IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="3CH.png" alt="Bluetooth Smart Switch 3CH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
-                
                 <div class="flex-grow flex flex-col justify-between">
                     <div>
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -939,7 +901,6 @@
                             <strong class="text-cyan-400">Key Components:</strong> Bluetooth Module, Relays, Terminal Blocks.
                         </p>
                     </div>
-
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Smart Home</span>
@@ -956,6 +917,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -971,5 +933,30 @@
         <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript for Filtering Functionality -->
+    <script>
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            // Update Active Tab Button Styling
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-cyan-500', 'text-slate-950', 'shadow-md');
+                btn.classList.add('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700');
+            });
+            event.target.classList.remove('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700');
+            event.target.classList.add('bg-cyan-500', 'text-slate-950', 'shadow-md');
+
+            // Show/Hide Cards Based on Category
+            cards.forEach(card => {
+                const categories = card.getAttribute('data-category');
+                if (category === 'all' || categories.includes(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
