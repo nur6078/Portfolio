@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nur Mohammad - Portfolio</title>
+    <title>Nur Mohammad - Professional Portfolio</title>
     <!-- Tailwind CSS CDN for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,18 +15,17 @@
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <span class="text-lg font-bold tracking-wider text-cyan-400">Nur Mohammad</span>
             <nav class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                <a href="#about" class="hover:text-cyan-400 transition">About</a>
-                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
-                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-                <a href="#portfolio-gallery" class="hover:text-cyan-400 transition text-cyan-400 font-bold">Project Portfolio</a>
+                <a href="#home" class="hover:text-cyan-400 transition text-cyan-400 font-bold">1. Home</a>
+                <a href="#hardware" class="hover:text-cyan-400 transition">2. PCB & Hardware</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">3. Projects</a>
+                <a href="#training" class="hover:text-cyan-400 transition">4. Training & Workshops</a>
                 <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 border-b border-slate-800/60">
         <!-- Circular Profile Picture -->
         <div class="flex-shrink-0">
             <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-2xl shadow-cyan-500/20">
@@ -40,144 +39,40 @@
                 Hi, I'm Nur Mohammad <span class="inline-block animate-bounce">👋</span>
             </h1>
             <p class="text-cyan-400 font-medium text-sm md:text-base mb-3">
-                Senior Research Engineer &bull; 19+ Years Experience &bull; Hardware R&D
+                Senior Research Engineer &bull; 19+ Years Professional Experience &bull; Hardware R&D Expert
             </p>
             <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed text-justify">
-                Specialized in electronic product development, embedded systems, PCB design, and hardware engineering. Focused on practical engineering solutions and turning technical concepts into functional hardware products.
+                Specialized in electronic product development, embedded systems, custom PCB design, and industrial hardware prototyping. Over nearly two decades, I have successfully turned advanced technical concepts into 150+ functional, production-ready commercial hardware products.
             </p>
 
             <!-- Action / Contact Buttons -->
             <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                <a href="mailto:contact@example.com" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
-                    <i class="fa-solid fa-envelope"></i> Email Me
+                <a href="#hardware" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-microchip"></i> Explore PCB & Hardware
                 </a>
-                <a href="#experience" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-briefcase"></i> Experience
-                </a>
-                <a href="#portfolio-gallery" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-microchip"></i> Project Portfolio
+                <a href="#training" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-chalkboard-user"></i> Training & Workshops
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-6">
-                <!-- Left Side: Bio -->
-                <div class="lg:col-span-2">
-                    <h2 class="text-lg md:text-xl font-bold mb-4 text-cyan-400 uppercase tracking-wider">About Me</h2>
-                    <p class="text-slate-300 leading-relaxed text-xs md:text-sm text-justify mb-4">
-                        With over 19 years of professional experience, I have been involved in engineering research, hardware development, product design, prototyping, testing, and commercialization. Throughout my career, I have contributed to the development of more than 150 electronic products, including development boards and custom hardware solutions.
-                    </p>
-                    <p class="text-slate-300 leading-relaxed text-xs md:text-sm text-justify">
-                        My professional interests include Embedded Systems, PCB & Hardware Design, Robotics, Microcontroller-Based Systems, Raspberry Pi, and Edge AI.
-                    </p>
-                </div>
-
-                <!-- Right Side: Highlight Card -->
-                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800/80 text-center shadow-lg shadow-cyan-500/5">
-                    <i class="fa-solid fa-medal text-cyan-400 text-3xl mb-3"></i>
-                    <h3 class="font-bold text-white text-sm mb-1">19+ Years Experience</h3>
-                    <p class="text-slate-400 text-xs">150+ Electronic Products & Commercialized Hardware Solutions.</p>
-                </div>
-            </div>
-
-            <!-- Education & Specialization Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
-                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
-                    <strong class="text-cyan-400 block mb-1">Education:</strong>
-                    <p>B.Sc. in Electrical and Electronics Engineering (Prime University)</p>
-                    <p>Diploma in Electrical Technology (MIST)</p>
-                </div>
-                <div class="bg-slate-950 p-4 rounded-lg border border-slate-800/80">
-                    <strong class="text-cyan-400 block mb-1">Specialization:</strong>
-                    <p>Embedded Systems, Hardware R&D, Microcontroller Training & Industrial Prototyping</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="max-w-6xl mx-auto px-6 py-16">
-        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Professional Experience</h2>
-        <div class="space-y-6 border-l-2 border-slate-800 pl-6 ml-2">
-            <div>
-                <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2013 – Present (13+ Years)</span>
-                <h3 class="text-base font-bold mt-1 text-white">Senior Research Engineer</h3>
-                <p class="text-slate-400 text-xs font-medium mb-1">TechShopBD (Product Development & Research)</p>
-                <p class="text-slate-300 text-xs text-justify">Leading hardware R&D, designing 150+ production-grade PCBs, development boards, Arduino shields, and directing embedded system projects.</p>
-            </div>
-            <div>
-                <span class="text-[10px] font-semibold text-cyan-400 uppercase tracking-wider">2007 – 2012 (5 Years)</span>
-                <h3 class="text-base font-bold mt-1 text-white">Technical Expert</h3>
-                <p class="text-slate-400 text-xs font-medium mb-1">Bangladesh University of Engineering and Technology (IICT-Industry Research Initiative)</p>
-                <p class="text-slate-300 text-xs text-justify">Contributed to major national embedded system initiatives including Electronic Voting Machines, Prepaid Electricity/Gas Meters, Remote Metering Systems, and Solar-Based Irrigation Systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="bg-slate-900/50 py-16 border-y border-slate-800/60">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Core Expertise & Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-microchip text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Embedded Systems & R&D</h3>
-                    <p class="text-slate-400 text-xs">AVR, ESP32, NodeMCU, PIC, 8051, Raspberry Pi 5, and Edge AI applications.</p>
-                </div>
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-bolt text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Hardware & PCB Design</h3>
-                    <p class="text-slate-400 text-xs">Schematic capture and PCB layout design using EasyEDA with 150+ commercial designs.</p>
-                </div>
-                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                    <i class="fa-solid fa-gears text-cyan-400 text-lg mb-3"></i>
-                    <h3 class="font-bold text-sm mb-2 text-white">Prototyping & Robotics</h3>
-                    <p class="text-slate-400 text-xs">Industrial automation prototyping, microcontroller-based systems, and robotics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
-        <h2 class="text-lg md:text-xl font-bold mb-8 text-cyan-400 uppercase tracking-wider">Key National & Commercial Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <h3 class="text-base font-bold mb-1 text-white">Electronic Voting Machine (EVM)</h3>
-                <p class="text-slate-400 text-xs leading-relaxed text-justify">Contributed as a core technical expert during national and municipal EVM deployment initiatives under BUET IICT.</p>
-            </div>
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <h3 class="text-base font-bold mb-1 text-white">Prepaid Electricity & Gas Meters</h3>
-                <p class="text-slate-400 text-xs leading-relaxed text-justify">Developed embedded hardware modules and metering solutions for automated utility tracking.</p>
-            </div>
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <h3 class="text-base font-bold mb-1 text-white">150+ Commercial PCB Designs</h3>
-                <p class="text-slate-400 text-xs leading-relaxed text-justify">Designed and production-readied over 150 unique printed circuit boards, development modules, and Arduino shields.</p>
-            </div>
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <h3 class="text-base font-bold mb-1 text-white">Solar-Based Irrigation Systems</h3>
-                <p class="text-slate-400 text-xs leading-relaxed text-justify">Engineered robust automation and control circuits for remote agricultural solar irrigation units.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Gallery Section with Filterable Tabs -->
-    <section id="portfolio-gallery" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60 scroll-mt-20">
+    <!-- 2. PCB & HARDWARE SECTION -->
+    <section id="hardware" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
-            <h2 class="text-lg md:text-xl font-bold text-cyan-400 uppercase tracking-wider">Project Portfolio (Sample)</h2>
+            <div>
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Section 02</span>
+                <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-wider">PCB & Hardware Collection</h2>
+            </div>
             
             <!-- Filter Tabs -->
             <div class="flex flex-wrap gap-2" id="filter-buttons">
-                <button onclick="filterProjects('all')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-slate-950 shadow-md">All</button>
-                <button onclick="filterProjects('module')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Modules</button>
-                <button onclick="filterProjects('iot')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">IoT & Smart Home</button>
-                <button onclick="filterProjects('devboard')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Dev Boards</button>
-                <button onclick="filterProjects('robotics')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Robotics</button>
-                <button onclick="filterProjects('shield')" class="tab-btn px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Shields</button>
+                <button onclick="filterProjects('all')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-slate-950 shadow-md">All</button>
+                <button onclick="filterProjects('module')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Modules</button>
+                <button onclick="filterProjects('iot')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">IoT & Smart Home</button>
+                <button onclick="filterProjects('devboard')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Dev Boards</button>
+                <button onclick="filterProjects('robotics')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Robotics</button>
+                <button onclick="filterProjects('shield')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Shields</button>
             </div>
         </div>
         
@@ -196,7 +91,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks for easy integration into robotics and automation projects.
+                            A compact and reliable dual H-bridge motor controller module designed and manufactured for driving two DC motors simultaneously. Based on the popular L293D IC, it features integrated 5V logic regulation, independent motor enable switches, and robust terminal blocks.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> L293D IC, 5V Logic Regulator, Terminal Blocks, Enable Switches
@@ -231,7 +126,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            Students often face difficulties in figuring out the pins of seven segment displays. This module features a 4 digit, Red, Common Cathode 7 segment display with all necessary pinouts. All pins that are needed to glow a particular segment and digit are clearly marked which saves your time and labour.
+                            Features a 4 digit, Red, Common Cathode 7 segment display with clearly marked pinouts designed to save time and eliminate wiring difficulties for engineering students and developers.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 4-Digit Common Cathode 7-Segment Display, Marked Pinouts
@@ -266,7 +161,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            Here comes an on board 5V relay with necessary pinouts to free you from the hassle of figuring out the relay pins. Just get this board and interface it with your Arduino or microcontroller to experiment with AC loads.
+                            On-board 5V relay with transistor drive circuit and clear pinouts, ideal for interfacing with microcontrollers to safely experiment with AC loads.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> On-board 5V Relay, Screw Terminals, Optocoupler/Driver Circuit
@@ -301,7 +196,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Ecosystem</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            Transform your home appliances into an IoT-enabled ecosystem using the NodeMCU development board. Control lights, fans, and electronics remotely via WiFi, voice commands, or popular smart home platforms like Alexa, Google Assistant, and Blynk.
+                            Transform home appliances into an IoT ecosystem using NodeMCU. Control lights and electronics remotely via WiFi and smart platforms like Alexa, Google Assistant, and Blynk.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> ESP8266 NodeMCU, 4x Songle 10A Relays, DHT11 Sensor Support
@@ -324,7 +219,7 @@
                 </div>
             </div>
 
-            <!-- Project Card 5: PIC Programmer (Dev Board / Tool) -->
+            <!-- Project Card 5: PIC Programmer (Dev Board) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="PIC_Pro.png" alt="PIC Programmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -336,7 +231,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Development Tool</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            This is the clone of PICkit2. A low-cost development tool with an easy-to-use interface for programming Microchip's wide range of 8-bit, 16-bit, and 32-bit microcontrollers and EEPROMs simply by placing them on the ZIF socket or via ICSP.
+                            PICkit2 clone development tool featuring ZIF socket and ICSP support for programming Microchip 8-bit, 16-bit, and 32-bit microcontrollers.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Features:</strong> ZIF Socket, 3-Channel Logic Analyzer, Built-in USB to Serial, ICSP Support
@@ -371,7 +266,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Timekeeping Module</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino RTC Shield is a dedicated timekeeping module designed to be easily mounted on top of an Arduino Uno or Mega. Powered by the I2C-supported DS1307 IC, it delivers precise real-time clock (RTC) functionality for accurate timekeeping applications.
+                            Dedicated timekeeping module powered by DS1307 IC with I2C interface, designed to mount directly on top of Arduino Uno or Mega.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> DS1307 IC, I2C Interface (SCL & SDA), Stackable Headers
@@ -406,10 +301,10 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Development Board</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            Comprehensive, all-in-one development board designed for experimenting with AVR series microcontrollers, specifically supporting both ATmega16 and ATmega32. Ideal educational tool for engineering students, hobbyists, and professionals. Features wide array of built-in peripherals including LCD, 7-Segment, Audio, Temp Sensor, LDR, IR, Bluetooth, and Wi-Fi slot.
+                            All-in-one development board for ATmega16 and ATmega32 microcontrollers featuring built-in peripherals like LCD, 7-Segment, sensors, and wireless slots.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> ATmega16/32, LCD, 7-Segment, LEDs, RGB LED, Buzzer, DS18B20, LDR, CH340.
+                            <strong class="text-cyan-400">Key Components:</strong> ATmega16/32, LCD, 7-Segment, LEDs, RGB LED, Buzzer, DS18B20, LDR.
                         </p>
                     </div>
                     <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
@@ -429,7 +324,7 @@
                 </div>
             </div>
 
-            <!-- Project Card 8: ESP32 IOT Board (Dev Board / IoT) -->
+            <!-- Project Card 8: ESP32 IOT Board (Dev Board) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="ESP32Dev.png" alt="ESP32 IOT Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -441,7 +336,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Platform</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP32 IOT Board is a comprehensive, all-in-one development and experimentation platform designed to jumpstart your IoT projects. At its core, it features a central ESP32 module socket with easily accessible pin headers on both sides, allowing you to quickly and securely connect a wide variety of external components and sensors.
+                            Comprehensive IoT experimentation platform with central ESP32 module socket, OLED display, and accessible expansion headers.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> ESP32, DHT11 Sensor, 0.96" OLED, Push Buttons, Expansion Headers.
@@ -476,7 +371,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Tool</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The AVR Programmer is a USB-powered circuit board featuring an ATmega8 microcontroller designed to read and write firmware, EEPROM, and fuse bits for various AVR microcontrollers. Equipped with both a ZIF socket and an ISP connector, it supports flexible programming for a wide range of Mega and Tiny series chips. It includes status indicator LEDs, a pin-selection switch, and a slow SCK option for safe and reliable programming across multiple operating systems.
+                            USB-powered ATmega8-based programmer supporting ZIF socket and ISP connector for firmware and fuse bit configuration across Mega and Tiny series chips.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> USB Type-B, ZIF Socket, ISP Headers.
@@ -511,7 +406,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Digital Security</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            A modern digital lock system replacing traditional keys with secure RFID technology. Ideal for home doors and cabinets, it utilizes MFRC522 modules for authentication via RFID cards or key tags. Features a 12V input connector to power the electronic door lock mechanism directly.
+                            Modern digital security lock using MFRC522 reader module with 12V input connector for driving electronic door locks via cards or key tags.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> MFRC522 Reader, RFID Card/Tag, 12V Input, Buzzer, Status LEDs.
@@ -534,7 +429,7 @@
                 </div>
             </div>
 
-            <!-- Project Card 11: 1 Channel Light Fan Dimmer Module (Module / IoT) -->
+            <!-- Project Card 11: 1 Channel Light Fan Dimmer Module (Module) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Dimmer1.png" alt="1 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -546,7 +441,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Smart Home</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            A single-channel smart dimmer designed to control AC loads like lights or ceiling fans remotely. Interface this module with a microcontroller (like ESP32/Arduino) and a smartphone application to adjust brightness or fan speed and toggle power.
+                            Single-channel smart AC dimmer module featuring zero-crossing detection and triac control for remote speed/brightness regulation via microcontrollers.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
@@ -569,7 +464,7 @@
                 </div>
             </div>
 
-            <!-- Project Card 12: 2 Channel Light Fan Dimmer Module (Module / IoT) -->
+            <!-- Project Card 12: 2 Channel Light Fan Dimmer Module (Module) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
                 <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="Dimmer2.png" alt="2 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
@@ -581,7 +476,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Smart Home</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            An enhanced version of the dimmer module, providing independent smart control for two separate AC loads, typically two lighting lines and one ceiling fan. Perfect for comprehensive room automation using Wi-Fi or Bluetooth-enabled microcontrollers.
+                            Independent smart control for two separate AC loads (lighting lines and ceiling fan) for comprehensive room automation.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
@@ -616,7 +511,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Robotics</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            A high-performance sensor module specifically engineered for advanced Line Following Robots. It features 8 infrared emitter/receiver pairs arranged in an array to provide high-resolution line detection for precise navigation on various surfaces.
+                            8-channel infrared sensor array engineered for advanced Line Following Robots, providing high-resolution line detection for precise navigation.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 8 Channel IR Sensors, Comparator IC, Sensitivity Potentiometers, Digital Outputs.
@@ -651,7 +546,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Module</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 4 Channel 5V Relay Module is a reliable switching board designed for controlling high-power AC and DC loads in microcontroller and embedded projects. Powered by 5V DC, it features four independent relays capable of handling loads up to 250V/10A. Utilizing a robust transistor-based drive circuit along with status indicator LEDs, screw terminal blocks for secure wiring, and dedicated trigger pins (CH1–CH4), this module provides efficient multi-channel control for Arduino, ESP32, and other development boards.
+                            4-channel switching board for controlling high-power AC/DC loads up to 250V/10A with transistor-based drive circuit and indicator LEDs.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 5V DC, 4-Channel Relays, Screw Terminal Blocks.
@@ -686,7 +581,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Module</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 10 Channel 5V Relay Module is a reliable switching board designed for controlling high-power AC and DC loads in microcontroller and embedded projects. Powered by 5V DC, it features ten independent relays capable of handling loads up to 250V/10A. Utilizing a robust transistor-based drive circuit along with status indicator LEDs, screw terminal blocks for secure wiring, and dedicated trigger pins (CH1–CH10), this module provides efficient multi-channel control for Arduino, ESP32, and other development boards.
+                            Ten independent relays for industrial and multi-app automation control, capable of managing loads up to 250V/10A securely.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 5V DC, 10-Channel Relays, Screw Terminal Blocks.
@@ -721,7 +616,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Development Board</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The PIC16F877A Mini Development Board is a compact, ready-to-use platform designed for experimenting and prototyping with Microchip's popular 8-bit microcontrollers. Built around the robust PIC16F877A IC, it features fully broken-out pin headers for all port pins (RA, RB, RC, RD, RE), allowing effortless access to peripherals and external circuitry. It includes a dedicated ICSP port for easy firmware flashing and debugging, alongside a DC power jack, power switch, status indicator LED, reset button, and an onboard crystal oscillator.
+                            Compact experimentation platform for PIC16F877A with broken-out pin headers, ICSP port, and onboard crystal oscillator.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> PIC16F877A IC, ICSP Port, DC Power Jack, Crystal Oscillator.
@@ -756,7 +651,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Module</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP8266 WiFi 2-Relay Switch is a smart, compact control board designed for IoT applications, home automation, and wireless appliance control. Built to accommodate an ESP-01 WiFi module, it features two independent high-current relays capable of handling loads up to 250V/10A. Equipped with onboard flash and reset buttons, a LOAD/PROG switch, status indicator LEDs, and convenient screw terminal blocks for AC/DC load connections, this module allows seamless remote monitoring and wireless switching over Wi-Fi.
+                            Compact control board supporting ESP-01 WiFi module with dual relays for wireless appliance control.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> ESP-01 Module, 2-Channel Relays, Screw Terminals.
@@ -791,7 +686,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Sensor</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 6-Channel Digital IR Sensor Array (TCRT5000) is a neat, ready-to-use solution designed specifically for line-following robots, eliminating the hassle of custom sensor alignment. It features six TCRT5000 reflective optical sensors spaced 0.6 inches apart, paired with LM358 dual operational amplifiers acting as comparators with adjustable reference voltages via individual onboard potentiometers (POT1–POT6). Providing clean digital outputs (HIGH/LOW) based on surface contrast, it allows precise line tracking on high-contrast tracks.
+                            6-channel TCRT5000 sensor array with LM358 comparators and individual potentiometers for precise line tracking on robots.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> TCRT5000 Sensors, LM358 Comparators, Potentiometers.
@@ -826,7 +721,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Tool</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino Bootloader Shield is a practical and efficient tool designed to quickly burn bootloaders onto ATmega328P microcontrollers using a ZIF (Zero Insertion Force) socket. Featuring a board without a built-in USB-to-Serial converter, it requires an external FTDI USB to Serial Converter for communication and program uploading. Once the bootloader is successfully flashed, the microcontroller can be programmed either directly on the shield or placed onto an Arduino Uno.
+                            Practical tool for quickly burning bootloaders onto ATmega328P microcontrollers using a ZIF socket.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> ZIF Socket, FTDI Header, Indicator LEDs.
@@ -861,7 +756,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Shield</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino LCD Keypad Shield is a versatile expansion board featuring a clear 16x2 LCD with white text on a blue background and an integrated 6-key keypad comprising Select, Left, Right, Up, Down, and a dedicated microcontroller Reset button. It includes an onboard potentiometer for adjustable LCD contrast control, a power indicator LED, and a Bluetooth connection header with a status indicator (HC-05 compatible). Designed for seamless integration, the shield provides top-mounted male header pins for digital input/output access and necessary pinouts.
+                            Expansion board featuring 16x2 LCD display, 6-key keypad, contrast potentiometer, and HC-05 compatible Bluetooth header.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> 16x2 LCD, 6-Key Keypad, Contrast Potentiometer.
@@ -896,7 +791,7 @@
                             <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Home Automation</span>
                         </div>
                         <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            Embrace the future of home automation with the Bluetooth Smart Switch 3CH, designed to make modern technology an accessible part of your daily life. This smart device allows you to control two lights and one fan directly from the palm of your hand, enhancing both convenience and your quality of life.
+                            Smart home automation device allowing remote wireless control of two lights and one fan directly via Bluetooth.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
                             <strong class="text-cyan-400">Key Components:</strong> Bluetooth Module, Relays, Terminal Blocks.
@@ -922,10 +817,83 @@
         </div>
     </section>
 
+    <!-- 3. PROJECTS SECTION (Research, Product Development & AI) -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
+        <div class="mb-8">
+            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Section 03</span>
+            <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-wider">Research, Product Development & AI Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
+                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-eye"></i></div>
+                <h3 class="text-base font-bold mb-2 text-white">Edge AI Computer Vision System</h3>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
+                    Developing a real-time multi-person edge AI detection system powered by Raspberry Pi 5, Raspberry Pi AI HAT+ with 26 TOPS Hailo-8 acceleration, and Pi Camera Module 3 Noir.
+                </p>
+            </div>
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
+                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-box-archive"></i></div>
+                <h3 class="text-base font-bold mb-2 text-white">Electronic Voting Machine (EVM)</h3>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
+                    Contributed as a core technical expert under BUET IICT for national and municipal EVM deployments, ensuring secure and reliable electronic balloting hardware.
+                </p>
+            </div>
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
+                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-gauge"></i></div>
+                <h3 class="text-base font-bold mb-2 text-white">Prepaid Utility Meters & Remote Metering</h3>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
+                    Engineered reliable embedded hardware modules and metering solutions for automated utility tracking including prepaid electricity and gas meters.
+                </p>
+            </div>
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
+                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-solar-panel"></i></div>
+                <h3 class="text-base font-bold mb-2 text-white">Solar-Based Agricultural Irrigation Systems</h3>
+                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
+                    Designed and built robust control circuits and industrial automation prototypes for remote agricultural solar-powered irrigation units.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. TRAINING & WORKSHOPS SECTION -->
+    <section id="training" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
+        <div class="mb-8">
+            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Section 04</span>
+            <h2 class="text-xl md:text-2xl font-bold text-white uppercase tracking-wider">Training & Workshops (Instructor Proof)</h2>
+            <p class="text-slate-400 text-xs mt-1">Professional mentoring, workshops, and hands-on instructional courses led as a technical trainer.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-chalkboard"></i></div>
+                <h3 class="font-bold text-sm mb-2 text-white">Microcontroller & Embedded Systems</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
+                    Served as lead course instructor at TechShopBD.com, teaching hands-on firmware design, architecture, and interfacing using Atmel AVR and ESP32 platforms.
+                </p>
+                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">TechShopBD Training Wing</span>
+            </div>
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="font-bold text-sm mb-2 text-white">PCB Design & Layout Workshops</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
+                    Conducted specialized workshops on schematic capture, component library creation, and professional PCB layout design using EasyEDA and KiCad.
+                </p>
+                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">Hardware Prototyping</span>
+            </div>
+            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-robot"></i></div>
+                <h3 class="font-bold text-sm mb-2 text-white">Robotics & Industrial Automation</h3>
+                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
+                    Mentored engineering students and developers in building automated robotic systems, sensor arrays, and microcontroller-based industrial monitoring units.
+                </p>
+                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">Practical Engineering</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="bg-slate-900/50 py-16 border-t border-slate-800/60 text-center">
+    <section id="contact" class="bg-slate-900/50 py-16 text-center">
         <h2 class="text-lg md:text-xl font-bold mb-3 text-cyan-400 uppercase tracking-wider">Let's Connect</h2>
-        <p class="text-slate-400 mb-6 max-w-md mx-auto text-xs">Interested in discussing hardware design, embedded systems, or collaboration? Feel free to reach out.</p>
+        <p class="text-slate-400 mb-6 max-w-md mx-auto text-xs">Interested in discussing hardware design, embedded systems, training collaborations, or research? Feel free to reach out.</p>
         <a href="mailto:contact@example.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg transition shadow-lg shadow-cyan-500/20 text-xs">Send An Email</a>
     </section>
 
