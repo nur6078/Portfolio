@@ -34,12 +34,12 @@
             
             <!-- Filter Tabs -->
             <div class="flex flex-wrap gap-2" id="filter-buttons">
-                <button onclick="filterProjects('all')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-slate-950 shadow-md">All</button>
-                <button onclick="filterProjects('module')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Modules</button>
-                <button onclick="filterProjects('iot')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">IoT & Smart Home</button>
-                <button onclick="filterProjects('devboard')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Dev Boards</button>
-                <button onclick="filterProjects('robotics')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Robotics</button>
-                <button onclick="filterProjects('shield')" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Shields</button>
+                <button onclick="filterProjects('all', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-cyan-500 text-slate-950 shadow-md">All</button>
+                <button onclick="filterProjects('module', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Modules</button>
+                <button onclick="filterProjects('iot', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">IoT & Smart Home</button>
+                <button onclick="filterProjects('devboard', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Dev Boards</button>
+                <button onclick="filterProjects('robotics', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Robotics</button>
+                <button onclick="filterProjects('shield', this)" class="tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">Shields</button>
             </div>
         </div>
         
@@ -621,4 +621,199 @@
                             Compact control board supporting ESP-01 WiFi module with dual relays for wireless appliance control.
                         </p>
                         <p class="text-slate-300 text-xs mb-4">
-                            <strong class="
+                            <strong class="text-cyan-400">Key Components:</strong> ESP-01 Module, 2-Channel Relays, Screw Terminals.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP8266</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-solid fa-download"></i> Guide
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> Firmware
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 18: Digital IR Sensor Array 6-Channel (Robotics) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="robotics">
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="Array6.png" alt="Digital IR Sensor Array 6-Channel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Digital IR Sensor Array 6-Channel (TCRT5000)</h3>
+                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Sensor</span>
+                        </div>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
+                            6-channel TCRT5000 sensor array with LM358 comparators and individual potentiometers for precise line tracking on robots.
+                        </p>
+                        <p class="text-slate-300 text-xs mb-4">
+                            <strong class="text-cyan-400">Key Components:</strong> TCRT5000 Sensors, LM358 Comparators, Potentiometers.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Robotics</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Sensor</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-solid fa-download"></i> Manual
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> Library
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 19: Arduino Bootloader Shield (Shield) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="bootloader.png" alt="Arduino Bootloader Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Arduino Bootloader Shield</h3>
+                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Tool</span>
+                        </div>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
+                            Practical tool for quickly burning bootloaders onto ATmega328P microcontrollers using a ZIF socket.
+                        </p>
+                        <p class="text-slate-300 text-xs mb-4">
+                            <strong class="text-cyan-400">Key Components:</strong> ZIF Socket, FTDI Header, Indicator LEDs.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Bootloader</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-solid fa-download"></i> Manual
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> Firmware
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 20: Arduino LCD Keypad Shield (Shield) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="LCD_Keypad.png" alt="Arduino LCD Keypad Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Arduino LCD Keypad Shield</h3>
+                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Shield</span>
+                        </div>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
+                            Expansion board featuring 16x2 LCD display, 6-key keypad, contrast potentiometer, and HC-05 compatible Bluetooth header.
+                        </p>
+                        <p class="text-slate-300 text-xs mb-4">
+                            <strong class="text-cyan-400">Key Components:</strong> 16x2 LCD, 6-Key Keypad, Contrast Potentiometer.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Display</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-solid fa-download"></i> Pinout
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 21: Bluetooth Smart Switch 3CH (IoT) -->
+            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
+                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="3CH.png" alt="Bluetooth Smart Switch 3CH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="flex-grow flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <h3 class="text-xl font-bold text-white">Bluetooth Smart Switch 3CH</h3>
+                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Home Automation</span>
+                        </div>
+                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
+                            Smart home automation device allowing remote wireless control of two lights and one fan directly via Bluetooth.
+                        </p>
+                        <p class="text-slate-300 text-xs mb-4">
+                            <strong class="text-cyan-400">Key Components:</strong> Bluetooth Module, Relays, Terminal Blocks.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Smart Home</span>
+                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Bluetooth</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
+                                <i class="fa-brands fa-android"></i> App APK
+                            </a>
+                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#070b14] border-t border-slate-900 py-6 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Filtering Functionality -->
+    <script>
+        function filterProjects(category, buttonElement) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            // Update Active Tab Button Styling
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-cyan-500', 'text-slate-950', 'shadow-md');
+                btn.classList.add('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700');
+            });
+            
+            buttonElement.classList.remove('bg-slate-800', 'text-slate-300', 'hover:bg-slate-700');
+            buttonElement.classList.add('bg-cyan-500', 'text-slate-950', 'shadow-md');
+
+            // Show/Hide Cards Based on Category
+            cards.forEach(card => {
+                const categories = card.getAttribute('data-category');
+                if (category === 'all' || (categories && categories.includes(category))) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
