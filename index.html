@@ -1,326 +1,176 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nur Mohammad - Professional Portfolio</title>
-    <!-- Tailwind CSS CDN for modern styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nur Mohammad - Sr. Research Engineer & Technical Trainer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-[#0b1120] text-slate-100 font-sans antialiased">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-[#0b1120]/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="text-lg font-bold tracking-wider text-cyan-400">Nur Mohammad</span>
-            <nav class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                <a href="index.html#home" class="hover:text-cyan-400 transition text-cyan-400 font-bold">1. Home</a>
-                <a href="hardware.html" class="hover:text-cyan-400 transition">2. PCB & Hardware</a>
-                <a href="index.html#projects" class="hover:text-cyan-400 transition">3. Projects</a>
-                <a href="index.html#training" class="hover:text-cyan-400 transition">4. Training & Workshops</a>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-cyan-400 flex items-center gap-2">
+                <i class="fa-solid fa-microchip"></i> Nur Mohammad
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+                <a href="pcb-hardware.html" class="hover:text-cyan-400 transition">PCB & Hardware</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#training" class="hover:text-cyan-400 transition">Training & Workshops</a>
                 <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
             </nav>
+
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition">
+                Get in Touch
+            </a>
         </div>
     </header>
 
-    <!-- 1. HOME SECTION -->
-    <section id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 border-b border-slate-800/60">
-        <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
-            <!-- Circular Profile Picture -->
-            <div class="flex-shrink-0">
-                <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-2xl shadow-cyan-500/20">
-                    <img src="NurPhoto.jpg" alt="Nur Mohammad" class="w-full h-full object-cover rounded-full bg-slate-900">
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="py-24 md:py-32 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Available for Technical Consulting
             </div>
-
-            <!-- Intro Text & Badges -->
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-2 text-white">
-                    Hi, I'm Nur Mohammad <span class="inline-block animate-bounce">👋</span>
-                </h1>
-                <p class="text-cyan-400 font-medium text-sm md:text-base mb-3">
-                    Senior Research Engineer &bull; 19+ Years Professional Experience &bull; Hardware R&D Expert
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm mb-6 max-w-xl leading-relaxed text-justify">
-                    Specialized in electronic product development, embedded systems, custom PCB design, and industrial hardware prototyping. Over nearly two decades, I have successfully turned advanced technical concepts into 150+ functional, production-ready commercial hardware products.
-                </p>
-
-                <!-- Action / Contact Buttons -->
-                <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                    <a href="hardware.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2 shadow-lg shadow-cyan-500/20">
-                        <i class="fa-solid fa-microchip"></i> Explore PCB & Hardware Page
-                    </a>
-                    <a href="#training" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-semibold px-4 py-2 rounded-lg transition text-xs flex items-center gap-2">
-                        <i class="fa-solid fa-chalkboard-user"></i> Training & Workshops
-                    </a>
-                </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Nur Mohammad</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed">
+                Senior Research Engineer, Technical Trainer, Workshop Facilitator, Seminar Speaker, Tech Blogger, and YouTube Content Creator specializing in embedded hardware, PCB design, and robotics prototyping.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#projects" class="px-6 py-3 rounded-xl font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20">
+                    Explore Projects
+                </a>
+                <a href="#training" class="px-6 py-3 rounded-xl font-semibold bg-slate-900 border border-slate-800 text-slate-200 hover:bg-slate-800 transition">
+                    Training & Workshops
+                </a>
             </div>
         </div>
-
-        <!-- Education & Specialization Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <strong class="text-cyan-400 block mb-2 text-sm"><i class="fa-solid fa-graduation-cap"></i> Education:</strong>
-                <p class="mb-1">&bull; B.Sc. in Electrical and Electronics Engineering (Prime University)</p>
-                <p>&bull; Diploma in Electrical Technology (Mirpur Institute of Science and Technology - MIST)</p>
-            </div>
-            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800/80">
-                <strong class="text-cyan-400 block mb-2 text-sm"><i class="fa-solid fa-brain"></i> Specialization & Expertise:</strong>
-                <p>Embedded Systems, Hardware R&D, Microcontroller Training, Industrial Automation Prototyping, and Precision Laboratory Equipment Inspection.</p>
-            </div>
-       </section>
-
-    <!-- 3. PROJECTS SECTION (Research, Product Development & AI) -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
-        <div class="mb-8">
-            <h2 class="text-lg md:text-xl font-bold text-cyan-400 uppercase tracking-wider">Research, Product Development & AI Projects</h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
-                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-eye"></i></div>
-                <h3 class="text-base font-bold mb-2 text-white">Edge AI Computer Vision System</h3>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
-                    Developing a real-time multi-person edge AI detection system powered by Raspberry Pi 5, Raspberry Pi AI HAT+ with 26 TOPS Hailo-8 acceleration, and Pi Camera Module 3 Noir.
-                </p>
-            </div>
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
-                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-box-archive"></i></div>
-                <h3 class="text-base font-bold mb-2 text-white">Electronic Voting Machine (EVM)</h3>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
-                    Contributed as a core technical expert under BUET IICT for national and municipal EVM deployments, ensuring secure and reliable electronic balloting hardware.
-                </p>
-            </div>
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
-                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-gauge"></i></div>
-                <h3 class="text-base font-bold mb-2 text-white">Prepaid Utility Meters & Remote Metering</h3>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
-                    Engineered reliable embedded hardware modules and metering solutions for automated utility tracking including prepaid electricity and gas meters.
-                </p>
-            </div>
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 hover:border-cyan-900 transition">
-                <div class="text-cyan-400 text-xl mb-3"><i class="fa-solid fa-solar-panel"></i></div>
-                <h3 class="text-base font-bold mb-2 text-white">Solar-Based Agricultural Irrigation Systems</h3>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed text-justify">
-                    Designed and built robust control circuits and industrial automation prototypes for remote agricultural solar-powered irrigation units.
-                </p>
+        <div class="relative w-72 h-72 md:w-96 md:96 flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
+            <div class="relative w-full h-full rounded-3xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl flex flex-col items-center justify-center p-8 text-center shadow-2xl">
+                <i class="fa-solid fa-code text-5xl text-cyan-400 mb-4"></i>
+                <h3 class="text-xl font-bold">Hardware & Embedded Expert</h3>
+                <p class="text-sm text-slate-400 mt-2">19+ Years of Professional Engineering & R&D Experience</p>
             </div>
         </div>
     </section>
 
-
-<!-- 4. TRAINING & WORKSHOPS SECTION -->
-<section id="training" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
-    <div class="mb-8">
-        <h2 class="text-lg md:text-xl font-bold text-cyan-400 uppercase tracking-wider">Training & Workshops</h2>
-        <p class="text-slate-400 text-xs mt-1">Professional mentoring, workshops, and hands-on instructional courses led as a technical trainer.</p>
-    </div>
-
-    <!-- Seminar / Training Cards Container -->
-    <div class="space-y-6">
-        
-        <!-- Card 1: Basic Robotics and Microcontrollers Seminar -->
-        <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
-            
-            <!-- Left Side: Image -->
-            <div class="flex-shrink-0 w-full md:w-96 h-60 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center">
-                <img src="seminar-photo-1.png" alt="Seminar on Basic Robotics and Microcontrollers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            </div>
-            
-            <!-- Right Side: Content -->
-            <div class="flex-grow flex flex-col justify-between">
-                <div>
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                        <h3 class="text-xl font-bold text-white">Basic Robotics and Microcontrollers Seminar</h3>
-                        <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Jahangirnagar University</span>
-                    </div>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        A seminar on “Basic Robotics and Microcontrollers” was held at the Department of Computer Science and Engineering, Jahangirnagar University, on June 15, 2023.
-                    </p>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        The seminar was organized by the Jahangirnagar University Robotics Club (JURC) in collaboration with Bangladesh Open Source Network (BdOSN), with support from TechShop Bangladesh and Pi Labs Academy.
-                    </p>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        We would like to express our sincere gratitude to the organizers, participants, and everyone who attended and contributed to making this event a success. Thank you all for your enthusiastic participation and support!
-                    </p>
-                </div>
-
-                <!-- Footer Tag -->
-                <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Keynote Speaker</span>
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">JURC & BdOSN</span>
-                    </div>
-                    <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-calendar-days text-cyan-400 mr-1.5"></i> June 15, 2023</span>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="max-w-3xl space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight text-cyan-400">About Me</h2>
+            <p class="text-slate-300 text-lg leading-relaxed">
+                I am a Senior Research Engineer at TechShop Bangladesh with over 19 years of extensive professional experience in product development, R&D, and embedded systems engineering (dating back to July 2007). Alongside corporate engineering, I am deeply passionate about knowledge sharing—serving as a technical trainer, workshop facilitator, seminar speaker, and creator of educational content via my channels <strong>Nur AI Creations</strong> and <strong>AI Trends</strong>.
+            </p>
         </div>
+    </section>
 
-
-    <!-- Seminar / Training Cards Container -->
-    <div class="space-y-6">
-        
-        <!-- Card 1: Basic Robotics and Microcontrollers Seminar -->
-        <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
-            
-            <!-- Left Side: Image -->
-            <div class="flex-shrink-0 w-full md:w-96 h-60 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center">
-                <img src="MCU-Class-1.png" alt="Seminar on Basic Robotics and Microcontrollers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-            </div>
-            
-            <!-- Right Side: Content -->
-            <div class="flex-grow flex flex-col justify-between">
-                <div>
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                        <h3 class="text-xl font-bold text-white">Basic Robotics and Microcontrollers Seminar</h3>
-                        <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Jahangirnagar University</span>
-                    </div>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        A seminar on “Basic Robotics and Microcontrollers” was held at the Department of Computer Science and Engineering, Jahangirnagar University, on June 15, 2023.
-                    </p>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        The seminar was organized by the Jahangirnagar University Robotics Club (JURC) in collaboration with Bangladesh Open Source Network (BdOSN), with support from TechShop Bangladesh and Pi Labs Academy.
-                    </p>
-                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                        We would like to express our sincere gratitude to the organizers, participants, and everyone who attended and contributed to making this event a success. Thank you all for your enthusiastic participation and support!
-                    </p>
-                </div>
-
-                <!-- Footer Tag -->
-                <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Keynote Speaker</span>
-                        <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">JURC & BdOSN</span>
-                    </div>
-                    <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-calendar-days text-cyan-400 mr-1.5"></i> June 15, 2023</span>
-                </div>
-            </div>
-        </div>
-
-
-
-         <!-- Card 2: Magic of Microcontroller (Batch-L64) -->
-    <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
-        
-        <!-- Left Side: Image -->
-        <div class="flex-shrink-0 w-full md:w-96 h-60 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center">
-            <img src="Batch-L64.png" alt="Batch L64 - Long Course of AVR Series Microcontroller" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-        </div>
-        
-        <!-- Right Side: Content -->
-        <div class="flex-grow flex flex-col justify-between">
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="space-y-12">
             <div>
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                    <h3 class="text-xl font-bold text-white">AVR Series Microcontroller (Batch-L64)</h3>
-                    <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">TechShop Bangladesh</span>
-                </div>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    This session captures the students of Batch-L69 during an intensive, long-term training course on AVR Series Microcontrollers held from Sun, Jul 11 to Thu, Oct 11, 2018. 
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    Conducted using our specialized AVR Trainer Kit Pro boards, the program uniquely integrated daily theoretical lectures, interactive reviews, and immediate practical implementation. 
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    For university-level engineering students, such extended hands-on training is vital as it bridges the gap between theoretical classroom knowledge and industrial application. By engaging in rigorous daily prototyping, hardware interfacing, and circuit debugging, students develop critical problem-solving skills and gain the absolute confidence required to architect real-world embedded systems.
-                </p>
+                <h2 class="text-3xl font-bold tracking-tight text-cyan-400">Professional Experience</h2>
+                <p class="text-slate-400 mt-2">Consolidated career progression and core responsibilities.</p>
             </div>
-    
-            <!-- Footer Tag -->
-            <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Microcontroller & Embedded System</span>
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR Trainer Kit Pro</span>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- TechShop BD Experience -->
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 backdrop-blur-sm relative">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">July 15, 2007 – Present</span>
+                    <h3 class="text-xl font-bold mt-2">TechShop Bangladesh</h3>
+                    <p class="text-sm text-slate-400">Dhaka, Bangladesh</p>
+                    <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li>Serving as Senior Research Engineer in Product Development & Research.</li>
+                        <li>Progressive career milestones spanning Research Assistant, Assistant Production Engineer, Production Engineer, and Senior Production Engineer.</li>
+                        <li>Designed and commercialized over 150 electronic products, including the PIC Programmer R2, AVR Trainer Kit Pro, and ESP8266 WiFi Smart Switch.</li>
+                    </ul>
                 </div>
-                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-calendar-days text-cyan-400 mr-1.5"></i> Jul 1 – Oct 11, 2018</span>
+
+                <!-- BUILT Experience -->
+                <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 backdrop-blur-sm relative">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">August 2007 – December 2012</span>
+                    <h3 class="text-xl font-bold mt-2">Bangladesh University of Engineering and Technology (BUET)</h3>
+                    <p class="text-sm text-slate-400">IICT-Industry Research Initiative, Dhaka</p>
+                    <ul class="mt-4 space-y-2 text-slate-300 text-sm list-disc list-inside">
+                        <li>Worked as Technical Expert and Research Assistant.</li>
+                        <li>Contributed to specialized hardware research initiatives and industry collaboration projects.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-          <!-- Card 2: AVR Series Microcontroller (Batch-L69) -->
-    <div class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group">
-        
-        <!-- Left Side: Image -->
-        <div class="flex-shrink-0 w-full md:w-96 h-60 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 flex items-center justify-center">
-            <img src="Batch-L69.png" alt="Batch L69 - Long Course of AVR Series Microcontroller" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-        </div>
-        
-        <!-- Right Side: Content -->
-        <div class="flex-grow flex flex-col justify-between">
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="space-y-12">
             <div>
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                    <h3 class="text-xl font-bold text-white">AVR Series Microcontroller (Batch-L69)</h3>
-                    <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">TechShop Bangladesh</span>
-                </div>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    This session captures the students of Batch-L69 during an intensive, long-term training course on AVR Series Microcontrollers held from Sun, Jan 5 to Tue, Mar 3, 2020. 
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    Conducted using our specialized AVR Trainer Kit Pro boards, the program uniquely integrated daily theoretical lectures, interactive reviews, and immediate practical implementation. 
-                </p>
-                <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                    For university-level engineering students, such extended hands-on training is vital as it bridges the gap between theoretical classroom knowledge and industrial application. By engaging in rigorous daily prototyping, hardware interfacing, and circuit debugging, students develop critical problem-solving skills and gain the absolute confidence required to architect real-world embedded systems.
-                </p>
+                <h2 class="text-3xl font-bold tracking-tight text-cyan-400">Featured Projects</h2>
+                <p class="text-slate-400 mt-2">Embedded hardware, edge AI, and commercialized electronic products.</p>
             </div>
-    
-            <!-- Footer Tag -->
-            <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Microcontroller & Embedded System</span>
-                    <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR Trainer Kit Pro</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/50 transition">
+                    <i class="fa-solid fa-eye text-2xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-lg font-semibold">Edge AI Computer Vision</h3>
+                    <p class="text-sm text-slate-400 mt-2">Real-time multi-person detection using Raspberry Pi 5, AI HAT+ (26 TOPS), and Camera Module 3 NoIR.</p>
                 </div>
-                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-calendar-days text-cyan-400 mr-1.5"></i> Jan 5 – Mar 3, 2020</span>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/50 transition">
+                    <i class="fa-solid fa-wifi text-2xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-lg font-semibold">ESP8266 Smart Switch</h3>
+                    <p class="text-sm text-slate-400 mt-2">Commercialized 4-channel IoT smart switch module designed for wireless home automation.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-cyan-500/50 transition">
+                    <i class="fa-solid fa-microchip text-2xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-lg font-semibold">AVR Trainer Kit Pro</h3>
+                    <p class="text-sm text-slate-400 mt-2">Comprehensive educational embedded trainer kit designed for university students and hobbyists.</p>
+                </div>
             </div>
-    </div>
-</div>
-
-    </div>
-</section>
-
-        <!-- 4. TRAINING & WORKSHOPS SECTION -->
-    <section id="training" class="max-w-6xl mx-auto px-6 py-16 border-b border-slate-800/60">
-        <div class="mb-8">
-            <h2 class="text-lg md:text-xl font-bold text-cyan-400 uppercase tracking-wider">Training & Workshops (Instructor Proof)</h2>
-            <p class="text-slate-400 text-xs mt-1">Professional mentoring, workshops, and hands-on instructional courses led as a technical trainer.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-chalkboard"></i></div>
-                <h3 class="font-bold text-sm mb-2 text-white">Microcontroller & Embedded Systems</h3>
-                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
-                    Served as lead course instructor at TechShopBD.com, teaching hands-on firmware design, architecture, and interfacing using Atmel AVR and ESP32 platforms.
-                </p>
-                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">TechShopBD Training Wing</span>
+    </section>
+
+    <!-- Training & Workshops Section -->
+    <section id="training" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="space-y-12">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-cyan-400">Training & Workshops</h2>
+                <p class="text-slate-400 mt-2">Empowering the next generation of engineers through hands-on technical education.</p>
             </div>
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-microchip"></i></div>
-                <h3 class="font-bold text-sm mb-2 text-white">PCB Design & Layout Workshops</h3>
-                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
-                    Conducted specialized workshops on schematic capture, component library creation, and professional PCB layout design using EasyEDA and KiCad.
-                </p>
-                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">Hardware Prototyping</span>
-            </div>
-            <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
-                <div class="text-cyan-400 text-lg mb-3"><i class="fa-solid fa-robot"></i></div>
-                <h3 class="font-bold text-sm mb-2 text-white">Robotics & Industrial Automation</h3>
-                <p class="text-slate-400 text-xs leading-relaxed mb-4 text-justify">
-                    Mentored engineering students and developers in building automated robotic systems, sensor arrays, and microcontroller-based industrial monitoring units.
-                </p>
-                <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-800">Practical Engineering</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800">
+                    <h3 class="text-xl font-bold text-cyan-400">Embedded Systems & Microcontrollers</h3>
+                    <p class="text-sm text-slate-300 mt-2">Conducted specialized training courses including batches L64, L66, and L69 at TechShop Bangladesh.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800">
+                    <h3 class="text-xl font-bold text-cyan-400">Robotics & Seminar Speaking</h3>
+                    <p class="text-sm text-slate-300 mt-2">Collaborated with Jahangirnagar University Robotics Club and Bangladesh Open Source Network as a workshop trainer and guest speaker.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-slate-900/50 py-16 text-center">
-        <h2 class="text-lg md:text-xl font-bold mb-3 text-cyan-400 uppercase tracking-wider">Let's Connect</h2>
-        <p class="text-slate-400 mb-6 max-w-md mx-auto text-xs">Interested in discussing hardware design, embedded systems, training collaborations, or research? Feel free to reach out.</p>
-        <a href="mailto:contact@example.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-6 py-2.5 rounded-lg transition shadow-lg shadow-cyan-500/20 text-xs">Send An Email</a>
+    <section id="contact" class="py-20 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="max-w-2xl mx-auto text-center space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight text-cyan-400">Let's Connect</h2>
+            <p class="text-slate-400">Interested in technical collaboration, consulting, or workshops? Reach out directly.</p>
+            <div class="flex justify-center gap-6 pt-4">
+                <a href="tel:01913076078" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 transition flex items-center gap-2 text-sm font-semibold">
+                    <i class="fa-solid fa-phone text-cyan-400"></i> 01913076078
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#070b14] border-t border-slate-900 py-6 text-center text-slate-500 text-xs">
-        <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
+    <footer class="py-8 px-6 text-center text-xs text-slate-500 border-t border-slate-900">
+        &copy; 2026 Nur Mohammad. All rights reserved.
     </footer>
 
 </body>
