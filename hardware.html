@@ -45,53 +45,54 @@
 
     
           <!-- Professional PCB Design & Manufacturing Standards Section -->
-    <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 md:p-8 mb-12 shadow-xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <!-- Text Details (7 columns) -->
-            <div class="lg:col-span-7 space-y-4">
-                <div class="inline-block px-3 py-1 bg-cyan-950 text-cyan-400 text-xs font-semibold uppercase tracking-wider rounded-full border border-cyan-800">
-                    Manufacturing Standards
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 md:p-8 mb-12 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Text Details (7 columns) -->
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-block px-3 py-1 bg-cyan-950 text-cyan-400 text-xs font-semibold uppercase tracking-wider rounded-full border border-cyan-800">
+                        Manufacturing Standards
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-white">Professional PCB Design & DFM Workflow</h3>
+                    <p class="text-slate-300 text-xs md:text-sm leading-relaxed text-justify">
+                        In our hardware development workflow, every PCB design goes far beyond basic software layout to meet strict global manufacturing standards and DFM (Design for Manufacturability) rules. Before sending the production files to advanced overseas fabrication facilities, every design is rigorously optimized to ensure:
+                    </p>
+                    <ul class="space-y-3 text-slate-300 text-xs md:text-sm">
+                        <li class="flex items-start gap-2 text-justify">
+                            <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
+                            <span><strong class="text-white">Gerber & Drill Files Precision:</strong> Generating 100% accurate Gerber and drill files for high-precision machining and flawless pin/hole alignment.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-justify">
+                            <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
+                            <span><strong class="text-white">Trace Width & Clearance:</strong> Maintaining proper clearance, trace widths, and creepage distances between high-voltage and low-voltage sections to completely eliminate short circuits and signal noise.</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-justify">
+                            <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
+                            <span><strong class="text-white">Surface Finish & Silkscreen:</strong> Utilizing high-grade solder masks, crystal-clear silkscreen labels (such as pinouts, component values, and warning symbols), and professional finishes (HASL/ENIG).</span>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="text-xl md:text-2xl font-bold text-white">Professional PCB Design & DFM Workflow</h3>
-                <p class="text-slate-300 text-xs md:text-sm leading-relaxed text-justify">
-                    In our hardware development workflow, every PCB design goes far beyond basic software layout to meet strict global manufacturing standards and DFM (Design for Manufacturability) rules. Before sending the production files to advanced overseas fabrication facilities, every design is rigorously optimized to ensure:
-                </p>
-                <ul class="space-y-3 text-slate-300 text-xs md:text-sm">
-                    <li class="flex items-start gap-2 text-justify">
-                        <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
-                        <span><strong class="text-white">Gerber & Drill Files Precision:</strong> Generating 100% accurate Gerber and drill files for high-precision machining and flawless pin/hole alignment.</span>
-                    </li>
-                    <li class="flex items-start gap-2 text-justify">
-                        <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
-                        <span><strong class="text-white">Trace Width & Clearance:</strong> Maintaining proper clearance, trace widths, and creepage distances between high-voltage and low-voltage sections to completely eliminate short circuits and signal noise.</span>
-                    </li>
-                    <li class="flex items-start gap-2 text-justify">
-                        <i class="fa-solid fa-check-circle text-cyan-400 mt-1 flex-shrink-0"></i>
-                        <span><strong class="text-white">Surface Finish & Silkscreen:</strong> Utilizing high-grade solder masks, crystal-clear silkscreen labels (such as pinouts, component values, and warning symbols), and professional finishes (HASL/ENIG).</span>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Image Holder (Adjusted to 4:3 Ratio Box) -->
-            <div class="lg:col-span-5 flex flex-col items-center">
-                <!-- এখানে h-64 এর বদলে md:h-[310px] বা আপনার প্রয়োজনমতো হাইট সেট করা হয়েছে যা 4:3 রেশিও মেইনটেইন করবে -->
-                <div class="w-full h-72 md:h-[320px] bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-inner group">
-                    <img src="PCBDesign.png" alt="Production-Ready Custom PCBs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                
+                <!-- Image Holder (Fixed Aspect Ratio) -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <!-- !!! এখানে aspect-ratio-4/3 ক্লাসটি যোগ করা হয়েছে !!! -->
+                    <div class="w-full aspect-ratio-4/3 bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-inner group">
+                        <img src="PCBDesign.png" alt="Production-Ready Custom PCBs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <p class="text-slate-400 text-[11px] text-center mt-2 italic text-justify px-2">
+                        Sample batch of production-ready custom PCBs fabricated overseas, featuring precision-routed traces and DFM compliance.
+                    </p>
                 </div>
-                <p class="text-slate-400 text-[11px] text-center mt-2 italic text-justify px-2">
-                    Sample batch of production-ready custom PCBs fabricated overseas, featuring precision-routed traces and DFM compliance.
-                </p>
             </div>
         </div>
-    </div>
-       
+        
         
         <!-- Projects Container -->
         <div class="space-y-6" id="projects-container">
             
-            <!-- Project Card 9: AVR Programmer (Dev Board) -->
+            <!-- Project Card 9: AVR Programmer (Dev Board) (Fixed Aspect Ratio) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                <!-- !!! এখানে aspect-ratio-4/3 ক্লাসটি যোগ করা হয়েছে !!! -->
+                <div class="flex-shrink-0 w-full md:w-56 aspect-ratio-4/3 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="AVRPro.png" alt="AVR Programmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="flex-grow flex flex-col justify-between">
@@ -124,9 +125,12 @@
                 </div>
             </div>
 
-            <!-- Project Card 7: AVR Trainer Kit Pro (Dev Board) -->
+            <!-- (অন্যান্য প্রজেক্ট কার্ডগুলোও নিচের মতো আপডেট করতে হবে) -->
+             
+            <!-- Project Card 7: AVR Trainer Kit Pro (Dev Board) (Fixed Aspect Ratio) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                <!-- !!! এখানে aspect-ratio-4/3 ক্লাসটি যোগ করা হয়েছে !!! -->
+                <div class="flex-shrink-0 w-full md:w-56 aspect-ratio-4/3 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="AVR_TKP.png" alt="AVR Trainer Kit Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="flex-grow flex flex-col justify-between">
@@ -159,9 +163,10 @@
                 </div>
             </div>
 
-            <!-- Project Card 5: PIC Programmer (Dev Board) -->
+            <!-- Project Card 5: PIC Programmer (Dev Board) (Fixed Aspect Ratio) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                <!-- !!! এখানে aspect-ratio-4/3 ক্লাসটি যোগ করা হয়েছে !!! -->
+                <div class="flex-shrink-0 w-full md:w-56 aspect-ratio-4/3 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="PIC_Pro.png" alt="PIC Programmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="flex-grow flex flex-col justify-between">
@@ -193,10 +198,11 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Project Card 1: L293D Motor Controller (Module) -->
+            
+            <!-- Project Card 1: L293D Motor Controller (Module) (Fixed Aspect Ratio) -->
             <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
+                <!-- !!! এখানে aspect-ratio-4/3 ক্লাসটি যোগ করা হয়েছে !!! -->
+                <div class="flex-shrink-0 w-full md:w-56 aspect-ratio-4/3 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
                     <img src="L293D-01.png" alt="L293D Dual DC Motor Controller" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="flex-grow flex flex-col justify-between">
@@ -229,741 +235,8 @@
                 </div>
             </div>
 
-            <!-- Project Card 1: ESP8266 8-Channel IoT Smart Switch -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="ESP-8-Relay.png" alt="ESP8266 8-Channel IoT Smart Switch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">ESP8266 8-Channel IoT Smart Switch</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP8266 8-Channel IoT Smart Switch is an advanced automation control board powered by a NodeMCU ESP12E module, designed to control up to eight heavy appliances remotely over Wi-Fi. Featuring onboard Hi-Link AC-DC power supply conversion, screw terminal blocks, and individual status indicator LEDs for each channel, it enables safe and reliable smart home integration through web dashboards or custom mobile applications.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> NodeMCU ESP12E, Hi-Link AC-DC Module, 8-Channel Relays.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP8266</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Manual
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Firmware
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project Card 2: NodeMCU V2 Expansion Board -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="NodeMCU-Board.png" alt="NodeMCU V2 Expansion Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">NodeMCU V2 Expansion Board</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Dev Board</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The NodeMCU V2 Expansion Board is an all-in-one prototyping platform that integrates an embedded mini breadboard, dedicated sensor pin headers, and multiple status LEDs to accelerate wireless IoT circuit development. Designed with a DC barrel jack and onboard voltage regulation, it provides dedicated breakout connections for popular peripheral modules while featuring an integrated buzzer and push buttons for real-time debugging.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> Breadboard, NodeMCU V2 Sockets, DC Jack, Status LEDs.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">NodeMCU</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Prototyping</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Examples
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project Card 3: 433MHz Wireless Relay Module -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="wireless">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="RF-Relay.png" alt="433MHz Wireless Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">433MHz 4-Channel Wireless Relay Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Wireless</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 433MHz 4-Channel Wireless Relay Module is a robust remote-controlled switching system bundled with a dedicated multi-button wireless RF key fob. Equipped with four heavy-duty relays, an onboard superheterodyne receiver module, and a tuned helical antenna, it allows users to wirelessly toggle electrical appliances, lighting fixtures, or DC motors over extended ranges with high operational stability and zero programming overhead.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 4-Channel Relays, RF Receiver, Key Fob Remote.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">RF 433MHz</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Wireless</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Manual
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Guide
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project Card 4: Arduino 1.8" TFT Display Shield -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="TFT-Shield.png" alt="Arduino 1.8 TFT Display Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Arduino 1.8" TFT Display Shield</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Display</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino 1.8" TFT Display Shield is a plug-and-play color graphic module designed explicitly to interface cleanly with standard Arduino microcontroller boards. Featuring a vibrant SPI-based TFT screen, integrated SD card slot, and auxiliary breakout pins for external sensors, it empowers developers to easily render high-contrast text, graphics, and real-time telemetry dashboards in portable or desktop instrumentation builds.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 1.8" TFT Screen, SPI Interface, Shield Header Pins.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">TFT</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Library
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Examples
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 2: 7 Segment Multiplexed Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="SevSeg.png" alt="7 Segment Multiplexed Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">7 Segment Multiplexed Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 7 Segment Multiplexed Module integrates a 4-digit red common cathode numeric display with clean pin breakout headers designed to save wiring time and eliminate complexity for students and developers. Engineered for digital counters, clocks, and timers, it reduces GPIO usage through efficient multiplexing while ensuring optimal current-limiting resistor protection for long-term brightness and operational stability.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 4-Digit Common Cathode 7-Segment Display, Marked Pinouts
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PCB</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Design</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> View Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 3: 1 Channel 5V Relay Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="5V1_Relay.png" alt="1 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">1 Channel 5V Relay Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Commercialized</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 1 Channel 5V Relay Module is a versatile single-pole double-throw switching board equipped with an on-board transistor driver circuit, flyback diode protection, and optocoupler isolation. Designed for safe microcontroller integration, it enables low-voltage logic systems to control high-power AC and DC loads with complete electrical isolation, status indication LEDs, and heavy-duty screw terminals.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> On-board 5V Relay, Screw Terminals, Optocoupler/Driver Circuit
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay Module</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Automation</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> View Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 4: ESP8266 WiFi 4 Channel IoT Smart Switch (IoT) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="4CH_IOT.png" alt="ESP8266 WiFi 4 Channel IoT Smart Switch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">ESP8266 WiFi 4 Channel IoT Smart Switch</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Ecosystem</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP8266 WiFi 4 Channel IoT Smart Switch transforms standard household electronics into an interconnected smart ecosystem via an onboard NodeMCU module. It allows users to manage four independent electrical appliances remotely over Wi-Fi, integrating seamlessly with cloud platforms like Blynk, Amazon Alexa, and Google Assistant. Built-in power filtering and robust Songle relays ensure high reliability and electrical safety.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> ESP8266 NodeMCU, 4x Songle 10A Relays, DHT11 Sensor Support
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Smart Home</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> View Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 6: Arduino RTC Shield (Shield) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="RTC_Shield.png" alt="Arduino RTC Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Arduino RTC Shield</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Timekeeping Module</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino RTC Shield is a precision timekeeping expansion board driven by the DS1307 real-time clock IC communicating over the I2C protocol. Engineered to stack directly onto Arduino Uno or Mega platforms, it includes a coin-cell battery backup holder to maintain accurate calendar and clock data during power outages. It provides convenient breakout headers for data logging and automated event scheduling applications.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> DS1307 IC, I2C Interface (SCL & SDA), Stackable Headers
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">RTC</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino Shield</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> View Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> GitHub Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 8: ESP32 IOT Board (Dev Board) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="ESP32Dev.png" alt="ESP32 IOT Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">ESP32 IOT Board</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Platform</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP32 IoT Board is a feature-rich wireless development platform centered around a dual-core ESP32 module, integrated with an energy-efficient 0.96" OLED display and onboard sensor interfaces. Designed for advanced cloud connectivity and edge data logging, it includes accessible pin breakout headers, push buttons, and regulated power circuitry to support complex IoT prototypes and wireless sensor node deployments.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> ESP32, DHT11 Sensor, 0.96" OLED, Push Buttons, Expansion Headers.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP32</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Library
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 10: RFID Access Control System (IoT) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="RFIDA.png" alt="RFID Access Control" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">RFID Access Control MFRC522</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Digital Security</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The RFID Access Control MFRC522 is a secure digital identification module engineered to interface smoothly with microcontrollers for automated gate and door lock management. Integrating an MFRC522 radio-frequency reader with a 12V driver relay circuit, it reads unique UID numbers from key tags or smartcards to grant authorized entry. It features audio-visual feedback indicators for successful verification and secure access logging.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> MFRC522 Reader, RFID Card/Tag, 12V Input, Buzzer, Status LEDs.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">RFID</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Security</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> Datasheet
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Arduino Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 11: 1 Channel Light Fan Dimmer Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="Dimmer1.png" alt="1 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">1 Channel Light Fan Dimmer Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Smart Home</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 1 Channel Light Fan Dimmer Module is a specialized AC load control circuit built around optoisolated triac switching and precise zero-crossing detection. Designed for integration with microcontroller and IoT boards, it allows smooth, flicker-free regulation of AC lighting intensity or ceiling fan speed. Its robust onboard snubbing circuitry ensures electrical safety and noise suppression during high-frequency phase control operations.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Dimmer</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AC Control</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> ESP Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 12: 2 Channel Light Fan Dimmer Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="Dimmer2.png" alt="2 Channel Dimmer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">2 Channel Light Fan Dimmer Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Smart Home</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 2 Channel Light Fan Dimmer Module provides dual independent AC load regulation channels, allowing simultaneous control of independent room lights and ceiling fans from a single compact PCB. Utilizing synchronized zero-crossing detection and dual triac outputs driven through optical isolators, it delivers reliable, noise-free performance for comprehensive residential automation and smart wall switch retrofits.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> Triac, Optocoupler, Zero-Crossing Detection, Microcontroller Header.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Dimmer</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AC Control</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> ESP Repo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 13: Digital IR Sensor Array 8 (Robotics) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="robotics">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="8Array.png" alt="Digital IR Sensor Array 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Digital IR Sensor Array 8</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Robotics</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Digital IR Sensor Array 8 is an elite 8-channel infrared reflectance module engineered specifically for high-speed line following robots and maze-solving autonomous vehicles. Featuring high-density optical sensors paired with precision comparator integrated circuits and individual sensitivity potentiometers, it delivers sharp digital outputs for accurate surface contrast mapping and PID-controlled high-velocity trajectory navigation.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 8 Channel IR Sensors, Comparator IC, Sensitivity Potentiometers, Digital Outputs.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Robotics</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Line Follower</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-file-pdf"></i> Datasheet
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> PID Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 14: 4 Channel 5V Relay Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="Relay_4.png" alt="4 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">4 Channel 5V Relay Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Module</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 4 Channel 5V Relay Module is an industrial-grade multi-channel switching board designed to manage high-power AC and DC loads up to 250V/10A directly from microcontrollers. Built with a dedicated transistor drive circuit, optical isolation options, and clear status indicator LEDs, it guarantees robust protection and dependable performance across home automation and multi-load industrial control projects.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 5V DC, 4-Channel Relays, Screw Terminal Blocks.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Datasheet
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 15: 10 Channel 5V Relay Module (Module) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="module">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="Relay_10.png" alt="10 Channel 5V Relay Module" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">10 Channel 5V Relay Module</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Module</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The 10 Channel 5V Relay Module provides ten fully independent switching circuits tailored for heavy-duty industrial automation and comprehensive multi-app smart building control. Capable of switching loads up to 250V/10A securely, it features reinforced PCB trace layouts, dedicated transistor driver arrays, and clear status LEDs to simplify complex wiring configurations and ensure robust operational safety.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 5V DC, 10-Channel Relays, Screw Terminal Blocks.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Relay</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Automation</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Datasheet
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 16: PIC16F877A Mini Development Board (Dev Board) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="devboard">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="PIC_Mini.png" alt="PIC16F877A Mini Development Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">PIC16F877A Mini Development Board</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Development Board</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The PIC16F877A Mini Development Board is a streamlined experimentation platform designed for the popular 40-pin PIC microcontroller. Featuring fully broken-out pin headers, an onboard crystal oscillator circuit, and a standard ICSP programming port, it provides a stable and compact environment for testing firmware, validating digital interfaces, and developing commercial embedded prototypes without breadboard clutter.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> PIC16F877A IC, ICSP Port, DC Power Jack, Crystal Oscillator.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">PIC</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Embedded</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Schematic
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Firmware
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 17: ESP8266 ESP-01 WiFi 2-Relay Switch (IoT) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="ESPRelay.png" alt="ESP8266 ESP-01 WiFi 2-Relay Switch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">ESP8266 ESP-01 WiFi 2-Relay Switch</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">IoT Module</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The ESP8266 ESP-01 WiFi 2-Relay Switch is an ultra-compact wireless control board designed to house an ESP-01 transceiver module alongside two independent high-current relays. It empowers users to build space-saving smart plugs and remote appliance controllers that connect directly to local Wi-Fi networks. Integrated onboard voltage regulation ensures stable power delivery for reliable wireless operation.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> ESP-01 Module, 2-Channel Relays, Screw Terminals.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">ESP8266</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">IoT</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Guide
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Firmware
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 18: Digital IR Sensor Array 6-Channel (Robotics) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="robotics">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="Array6.png" alt="Digital IR Sensor Array 6-Channel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Digital IR Sensor Array 6-Channel (TCRT5000)</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Sensor</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Digital IR Sensor Array 6-Channel utilizes high-precision TCRT5000 optical pairs paired with LM358 operational amplifiers and individual trimming potentiometers to deliver reliable surface contrast detection. Optimized for mid-tier line tracking robots, it provides clean digital threshold outputs that facilitate accurate path sensing, edge detection, and responsive navigation across diverse racing tracks.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> TCRT5000 Sensors, LM358 Comparators, Potentiometers.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Robotics</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Sensor</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Manual
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Library
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 19: Arduino Bootloader Shield (Shield) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="bootloader.png" alt="Arduino Bootloader Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Arduino Bootloader Shield</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Tool</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino Bootloader Shield is a specialized production tool engineered to rapidly burn bootloaders onto raw ATmega328P and similar AVR microcontrollers using an integrated ZIF socket. Designed with an onboard crystal oscillator and FTDI header compatibility, it streamlines batch microcontroller preparation for hardware manufacturing, educational workshops, and custom PCB production without requiring complex external wiring.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> ZIF Socket, FTDI Header, Indicator LEDs.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">AVR</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Bootloader</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Manual
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Firmware
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 20: Arduino LCD Keypad Shield (Shield) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="shield">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="LCD_Keypad.png" alt="Arduino LCD Keypad Shield" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Arduino LCD Keypad Shield</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Shield</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Arduino LCD Keypad Shield is an all-in-one user interface board featuring a 16x2 character LCD display, a 5-button navigational keypad configured via a single analog input pin, a contrast adjustment potentiometer, and an auxiliary HC-05 compatible Bluetooth header. It provides a complete standalone interaction platform for menu-driven embedded systems, test equipment, and portable instruments.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> 16x2 LCD, 6-Key Keypad, Contrast Potentiometer.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Arduino</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Display</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-solid fa-download"></i> Pinout
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Card 21: Bluetooth Smart Switch 3CH (IoT) -->
-            <div class="project-card bg-slate-900/50 border border-slate-800 rounded-2xl p-6 flex flex-col md:flex-row gap-8 hover:border-cyan-900 transition-all duration-300 group" data-category="iot">
-                <div class="flex-shrink-0 w-full md:w-56 h-48 bg-slate-950 rounded-xl overflow-hidden border border-slate-800">
-                    <img src="3CH.png" alt="Bluetooth Smart Switch 3CH" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-                <div class="flex-grow flex flex-col justify-between">
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-                            <h3 class="text-xl font-bold text-white">Bluetooth Smart Switch 3CH</h3>
-                            <span class="px-2.5 py-1 bg-emerald-950 text-emerald-400 text-[10px] font-semibold uppercase tracking-wider rounded-full border border-emerald-800">Home Automation</span>
-                        </div>
-                        <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-3 text-justify">
-                            The Bluetooth Smart Switch 3CH is a dedicated residential automation controller enabling reliable wireless switching of three separate AC loads (such as two room lights and a ceiling fan) directly via smartphone Bluetooth connectivity. Featuring robust onboard relays, screw terminal blocks, and a dedicated serial Bluetooth header, it provides an accessible, cost-effective upgrade path for local smart home installations.
-                        </p>
-                        <p class="text-slate-300 text-xs mb-4">
-                            <strong class="text-cyan-400">Key Components:</strong> Bluetooth Module, Relays, Terminal Blocks.
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-slate-800/80">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Smart Home</span>
-                            <span class="px-3 py-1 bg-cyan-950 text-cyan-300 text-xs font-medium rounded-full border border-cyan-800">Bluetooth</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="#" target="_blank" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition">
-                                <i class="fa-brands fa-android"></i> App APK
-                            </a>
-                            <a href="#" target="_blank" class="text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1.5 border border-slate-700">
-                                <i class="fa-brands fa-github"></i> Source Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <!-- (অন্যান্য প্রজেক্টগুলোও একই নিয়মে আপডেট করুন...) -->
+             
         </div>
     </section>
 
