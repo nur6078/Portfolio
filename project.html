@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCB Designs | Nur Mohammad</title>
+    <!-- Tailwind CSS CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom smooth glowing and glassmorphism effects */
+        .glass-card {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.7) 0%, rgba(30, 41, 59, 0.4) 100%);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-[#0b1120] text-slate-100 font-sans antialiased selection:bg-cyan-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0b1120]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-lg font-bold tracking-wider text-cyan-400">Nur Mohammad</a>
+            <nav class="hidden md:flex space-x-6 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                <a href="index.html#home" class="hover:text-cyan-400 transition">1. Home</a>
+                <a href="hardware.html" class="text-cyan-400 font-bold border-b-2 border-cyan-500 pb-5 -mb-5 transition">2. PCB & Hardware</a>
+                <a href="index.html#projects" class="hover:text-cyan-400 transition">3. Projects</a>
+                <a href="training.html" class="hover:text-cyan-400 transition">4. Training & Workshops</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content (Reduced Top/Bottom Padding) -->
+    <main class="max-w-6xl mx-auto px-6 py-8 md:py-10">
+
+        <!-- Section Header (Compact Gap) -->
+        <div class="mb-10 border-b border-slate-800/80 pb-6">
+            <span class="text-cyan-400 text-xs font-bold uppercase tracking-[0.2em] block mb-1.5">Hardware Engineering</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">PCB Design Portfolio</h1>
+            <p class="text-slate-400 text-sm md:text-base mt-2 max-w-3xl leading-relaxed">
+                A curated showcase of custom hardware, multi-layer PCB layouts, and embedded systems engineered for reliability and performance.
+            </p>
+        </div>
+
+        <!-- Projects Showcase -->
+        <div id="projects-container">
+            
+            <!-- Project 1: Image Left, Text Right -->
+            <section class="flex flex-col md:flex-row items-center gap-8 md:gap-12 group">
+                <!-- Image Showcase -->
+                <div class="w-full md:w-[46%] relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+                    <div class="relative glass-card border border-slate-800 rounded-2xl p-4 md:p-6 flex items-center justify-center h-64 md:h-80 overflow-hidden glow-hover transition">
+                        <img src="AVRPro.png" alt="AVR Programmer ZIF" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="w-full md:w-[54%] space-y-3.5">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-mono text-cyan-400">01</span>
+                        <span class="h-[1px] w-8 bg-cyan-500/40"></span>
+                        <span class="text-emerald-400 text-xs font-semibold uppercase tracking-widest">Development Tool</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
+                        AVR Programmer ZIF
+                    </h2>
+
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed text-justify">
+                        The AVR Programmer is a USB-powered ATmega8 board designed to read and write firmware as well as fuse bits. It features a ZIF socket for effortless insertion and removal of DIP-28 MCUs alongside an ISP header for external programming. The layout integrates USB over-current protection, status LEDs for power, busy, and error states, and optimized trace widths for signal stability.
+                    </p>
+
+                    <!-- Minimalist Tech Specs / Tags -->
+                    <div class="pt-1 flex flex-wrap gap-x-5 gap-y-2 text-xs font-mono text-cyan-300/90">
+                        <span>#ATmega8</span>
+                        <span>#USBASP</span>
+                        <span>#DFM-Optimized</span>
+                        <span>#ZIF-Socket</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Divider Line (Tighter Vertical Margin) -->
+            <hr class="border-slate-800/80 my-10 md:my-12">
+
+            <!-- Project 2: Text Left, Image Right -->
+            <section class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 group">
+                <!-- Text Content -->
+                <div class="w-full md:w-[54%] space-y-3.5">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-mono text-cyan-400">02</span>
+                        <span class="h-[1px] w-8 bg-cyan-500/40"></span>
+                        <span class="text-sky-400 text-xs font-semibold uppercase tracking-widest">Development Board</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
+                        AVR Trainer Kit Pro
+                    </h2>
+
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed text-justify">
+                        A comprehensive educational development board built around the ATmega32 microcontroller for university labs and embedded learners. It integrates essential peripherals including a 16x2 LCD, multiplexed 7-segment displays, matrix keypad, ADC inputs, a DS18B20 temperature sensor, and dedicated slots for ESP8266 and HC-05 modules with a generous prototyping area.
+                    </p>
+
+                    <!-- Minimalist Tech Specs / Tags -->
+                    <div class="pt-1 flex flex-wrap gap-x-5 gap-y-2 text-xs font-mono text-cyan-300/90">
+                        <span>#ATmega32</span>
+                        <span>#University-Lab</span>
+                        <span>#IoT-Ready</span>
+                        <span>#Multi-Peripheral</span>
+                    </div>
+                </div>
+
+                <!-- Image Showcase -->
+                <div class="w-full md:w-[46%] relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-sky-500/10 to-cyan-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+                    <div class="relative glass-card border border-slate-800 rounded-2xl p-4 md:p-6 flex items-center justify-center h-64 md:h-80 overflow-hidden glow-hover transition">
+                        <img src="AVR_TKP.png" alt="AVR Trainer Kit Pro" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Divider Line -->
+            <hr class="border-slate-800/80 my-10 md:my-12">
+
+            <!-- Project 3: Image Left, Text Right -->
+            <section class="flex flex-col md:flex-row items-center gap-8 md:gap-12 group">
+                <!-- Image Showcase -->
+                <div class="w-full md:w-[46%] relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-orange-500/10 to-cyan-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
+                    <div class="relative glass-card border border-slate-800 rounded-2xl p-4 md:p-6 flex items-center justify-center h-64 md:h-80 overflow-hidden glow-hover transition">
+                        <img src="ESP-8-Relay.png" alt="ESP8266 8-Channel IoT Smart Switch" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="w-full md:w-[54%] space-y-3.5">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs font-mono text-cyan-400">03</span>
+                        <span class="h-[1px] w-8 bg-cyan-500/40"></span>
+                        <span class="text-orange-400 text-xs font-semibold uppercase tracking-widest">IoT Automation</span>
+                    </div>
+
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">
+                        ESP8266 8-Channel Smart Switch
+                    </h2>
+
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed text-justify">
+                        An industrial-grade IoT automation board powered by the ESP-12E module, engineered to control up to eight high-power AC loads. The PCB incorporates full optocoupler isolation between low-voltage control logic and high-voltage relay switching, paired with an onboard Hi-Link AC-DC power supply and individual channel status indicators.
+                    </p>
+
+                    <!-- Minimalist Tech Specs / Tags -->
+                    <div class="pt-1 flex flex-wrap gap-x-5 gap-y-2 text-xs font-mono text-cyan-300/90">
+                        <span>#ESP-12E</span>
+                        <span>#8-Channel-Relay</span>
+                        <span>#Opto-Isolated</span>
+                        <span>#AC-DC-Onboard</span>
+                    </div>
+                </div>
+            </section>
+
+        </div> <!-- End Showcase -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#070b14] border-t border-slate-800 py-8 mt-10 text-center text-slate-400 text-xs tracking-wider uppercase font-medium">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-4">
+            <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
