@@ -975,12 +975,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer class="bg-[#070b14] border-t border-slate-900 py-6 text-center text-slate-500 text-xs">
         <p>&copy; 2026 Nur Mohammad. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Filtering Functionality -->
+    <!-- JavaScript for Filtering and Search Functionality -->
     <script>
         function filterProjects(category, buttonElement) {
             const cards = document.querySelectorAll('.project-card');
@@ -996,15 +996,37 @@
             buttonElement.classList.add('bg-cyan-500', 'text-slate-950', 'shadow-md');
 
             // Show/Hide Cards Based on Category
+            const currentSearch = document.getElementById('project-search').value.toLowerCase();
             cards.forEach(card => {
                 const categories = card.getAttribute('data-category');
-                if (category === 'all' || (categories && categories.includes(category))) {
+                const textContent = card.innerText.toLowerCase();
+                
+                const categoryMatch = (category === 'all' || (categories && categories.includes(category)));
+                const searchMatch = textContent.includes(currentSearch);
+
+                if (categoryMatch && searchMatch) {
                     card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
                 }
             });
         }
+
+        // Search functionality integration
+        document.getElementById('project-search').addEventListener('input', function() {
+            const currentActiveTab = document.querySelector('.tab-btn.bg-cyan-500');
+            const activeCategory = currentActiveTab ? currentActiveTab.onclick.toString().match(/'([^']+)'/)[1] : 'all';
+            filterProjects(activeCategory, currentActiveTab);
+        });
+
+        // Clear search button functionality
+        document.getElementById('clear-search').addEventListener('click', function() {
+            document.getElementById('project-search').value = '';
+            const currentActiveTab = document.querySelector('.tab-btn.bg-cyan-500');
+            const activeCategory = currentActiveTab ? currentActiveTab.onclick.toString().match(/'([^']+)'/)[1] : 'all';
+            filterProjects(activeCategory, currentActiveTab);
+            document.getElementById('project-search').focus();
+        });
     </script>
 </body>
 </html>
